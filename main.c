@@ -46,3 +46,19 @@ void Palindrome() {
       printf("\n\n이 문자열은 회문(Palindrome)이 아닙니다. \n\n");
       
 }
+
+void retry()
+{
+   char anw;
+   printf("\n\n\n계속 진행하시겠습니까? Y or N\n");
+   scanf("%c", &anw);
+   getchar();
+
+   if ((anw == 'N') || (anw == 'n'))
+   {
+      printf("\n\n프로그램을 종료합니다.\n\n");
+      exit(0);
+   }
+   system("cls");
+}
+
