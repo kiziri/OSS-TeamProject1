@@ -8,6 +8,18 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <title>오늘의 요리사</title>
 
+<style>
+	.searchPart1 {
+		margin : 0 auto;
+	}        
+	.searchPart2 {
+		margin : ;
+	}        
+	.searchPart3 {
+		margin : 30;
+	}        	
+</style>
+
 </head>
 <body>
 		<!-- 메뉴바 파트 부분 -->
@@ -40,15 +52,16 @@
 	<br>
 	<!-- /개행 부분 -->
 	
-	<!-- 메뉴바 파트 부분 -->
+	<!-- 검색 파트 부분 -->
 	<form>
-  		<div class="form-group center-block">
-    		<label class="center-block" style="width: 500px;" for="searchMenu">요리 정보 검색</label>
-    		<input type="search" class="form-control center-block"  style="width: 700px;" id="searchMenu" aria-describedby="searchHlep">
-    		<small id="searchHlep" class="form-text text-muted center-block" style="width: 500px;">정보를 알고 싶은 요리명을 입력하시오.</small>
+  		<div class="form-group">
+    		<label class="searchPart1" for="searchMenu">요리 정보 검색</label>
+    		<input type="search" class="form-control searchPart2"  style="width: 700px;" id="searchMenu" aria-describedby="searchHlep">
+    		<small id="searchHlep" class="form-text text-muted searchPart3">정보를 알고 싶은 요리명을 입력하시오.</small>
   		</div>
   		<button type="submit" class="btn btn-primary center-block">Submit</button>
 	</form>
+	<!-- /검색 파트 부분 -->
 
 	<!-- 개행 부분 -->
 	<br>
