@@ -9,27 +9,56 @@
 <title>오늘의 요리사</title>
 
 <style>
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(//fonts.googleapis.com/earlyaccess/jejuhallasan.css);
 	.searchPart1 {
 		margin : 0 auto;
+		font-family: 'Jeju Gothic', sans-serif;
+		font-size : 1.5em;
+		color : rgb(0,0,0);
 	}        
 	.searchPart2 {
 		margin : ;
+		font-family: 'Jeju Gothic', sans-serif;
 	}        
 	.searchPart3 {
 		margin : 30;
+		font-family: 'Jeju Gothic', sans-serif;
 	}        	
 	.menuBtn {
-	
+	 border : 20px solid rgb(199,199,199);
+	 padding : 20px;
+	 font-family: 'Jeju Hallasan', cursive;
+	 font-size : 1.5em;
+	 margin : 
 	}
 	.recipeBtn {
-	
+	border : 20px solid rgb(199,199,199);
+	padding : 20px;
+	font-family: 'Jeju Hallasan', cursive;
+	font-size : 1.5em;
+	}
+	.nav{
+	background : rgb(0,0,0);
+	color : rgb(255,255,255);
+	font-size : 1em;
+	text-align : center;
+	font-family: 'Jeju Hallasan', cursive;
+	}
+	.submitBtn{
+	border : 10px solid rgb(255,255,153);
+	 padding : 10px;
+	 font-family: 'Jeju Hallasan', cursive;
+	 font-size : 1.5em;
+	 background : rgb(255,255,255);
+	 color : rgb(0,0,0)
 	}
 </style>
 
 </head>
 <body>
 		<!-- 메뉴바 파트 부분 -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark nav">
   		<a class="navbar-brand " href="/main/MainPage.html">오늘의 요리사</a>
   		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     	<span class="navbar-toggler-icon"></span>
@@ -65,19 +94,17 @@
     		<input type="search" class="form-control searchPart2"  style="width: 700px;" id="searchMenu" aria-describedby="searchHlep">
     		<small id="searchHlep" class="form-text text-muted searchPart3">정보를 알고 싶은 요리명을 입력하시오.</small>
   		</div>
-  		<button type="submit" class="btn btn-primary center-block">Submit</button>
+  		<button type="submit" class="btn btn-primary center-block submitBtn">Submit</button>
 	</form>
 	<!-- /검색 파트 부분 -->
 
 	<!-- 개행 부분 -->
 	<br>
 	<br>
-	<br>
-	<br>
 	<!-- /개행 부분 -->
 	
 	<!-- 메뉴 추천 및 레시피 추천 버튼 부분 -->
-	<button type="button" class="btn btn-dark menuBtn">메뉴 추천</button>
+	<button type="button" class="btn btn-dark menuBtn" align="center">메뉴 추천</button>
 	<button type="button" class="btn btn-dark recipeBtn">레시피 추천</button>
 	
 	<!-- /메뉴 추천 및 레시피 추천 버튼 부분 -->
