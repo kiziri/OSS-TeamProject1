@@ -26,18 +26,37 @@
 		font-family: 'Jeju Gothic', sans-serif;
 	}        	
 	.menuBtn {
-	 border : 20px solid rgb(199,199,199);
-	 padding : 20px;
+	 padding : 15px;
 	 font-family: 'Jeju Hallasan', cursive;
 	 font-size : 1.5em;
-	 margin : 
+	 border: 3px solid skyblue; 
+	 background-color: rgba(0,0,0,0); 
+	 color: skyblue; 
+	 padding: 5px;
+	 border-top-left-radius: 5px; 
+	 border-bottom-left-radius: 5px; 
+	 margin-right:0px;
+
 	}
 	.recipeBtn {
-	border : 20px solid rgb(199,199,199);
-	padding : 20px;
+	padding : 15px;
 	font-family: 'Jeju Hallasan', cursive;
 	font-size : 1.5em;
+	border: 3px solid skyblue; 
+	background-color: rgba(0,0,0,0); 
+	color: skyblue; 
+	padding: 5px;
+	border-top-right-radius: 5px; 
+	border-bottom-right-radius: 5px; 
+	margin-left:0px;
 	}
+	.menuBtn:hover{
+	color:white; 
+	background-color: skyblue; }
+	.recipeBtn:hover{
+	color:white; 
+	background-color: skyblue; }
+
 	.nav{
 	background : rgb(0,0,0);
 	color : rgb(255,255,255);
@@ -45,14 +64,23 @@
 	text-align : center;
 	font-family: 'Jeju Hallasan', cursive;
 	}
+	
 	.submitBtn{
-	border : 10px solid rgb(255,255,153);
-	 padding : 10px;
-	 font-family: 'Jeju Hallasan', cursive;
-	 font-size : 1.5em;
-	 background : rgb(255,255,255);
-	 color : rgb(0,0,0)
+	padding : 15px;
+	font-family: 'Jeju Hallasan', cursive;
+	font-size : 1.5em;
+	border: 3px solid skyblue; 
+	background-color: rgba(0,0,0,0); 
+	color: skyblue; 
+	padding: 5px;
+	border-top-right-radius: 5px; 
+	border-bottom-right-radius: 5px; 
+	margin-left:0px;
 	}
+	.submitBtn:hover{
+	color:white; 
+	background-color: skyblue; }
+	
 </style>
 
 </head>
@@ -82,6 +110,10 @@
 	</nav>
 	<!-- /메뉴바 파트 부분 -->
 	
+	<!-- 메인 배경화면 -->
+	<img src="images/main-cover.jpg" title = "Main Cover img">
+	<!-- /메인 배경화면 -->
+	
 	<!-- 개행 부분 -->
 	<br>
 	<br>
@@ -104,8 +136,8 @@
 	<!-- /개행 부분 -->
 	
 	<!-- 메뉴 추천 및 레시피 추천 버튼 부분 -->
-	<button type="button" class="btn btn-dark menuBtn" align="center">메뉴 추천</button>
-	<button type="button" class="btn btn-dark recipeBtn">레시피 추천</button>
+	<button type="button" class="btn menuBtn">메뉴 추천</button>
+	<button type="button" class="btn recipeBtn">레시피 추천</button>
 	
 	<!-- /메뉴 추천 및 레시피 추천 버튼 부분 -->
 
