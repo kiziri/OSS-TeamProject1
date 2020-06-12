@@ -27,29 +27,32 @@
 		font-family: 'Jeju Gothic', sans-serif;
 	}        	
 	.menuBtn {
+	background : url("/images/menuBtn3.png") no-repeat;
 	 padding : 15px;
 	 font-family: 'Jeju Hallasan', cursive;
-	 font-size : 1.5em;
+	 font-size : 2.5em;
 	 border: 3px solid skyblue; 
-	 background-color: rgba(0,0,0,0); 
+	 background-color: rgb(255,255,255); 
 	 color: skyblue; 
-	 padding: 5px;
 	 border-top-left-radius: 5px; 
 	 border-bottom-left-radius: 5px; 
 	 margin-right:0px;
-
+	 width : 200px;
+	height : 150px;
 	}
+	
 	.recipeBtn {
 	padding : 15px;
 	font-family: 'Jeju Hallasan', cursive;
-	font-size : 1.5em;
+	font-size : 2em;
 	border: 3px solid skyblue; 
-	background-color: rgba(0,0,0,0); 
+	background-color: rgb(255,255,255); 
 	color: skyblue; 
-	padding: 5px;
 	border-top-right-radius: 5px; 
 	border-bottom-right-radius: 5px; 
 	margin-left:0px;
+	width : 200px;
+	height : 150px;
 	}
 	.menuBtn:hover{
 	color:white; 
@@ -80,7 +83,17 @@
 	}
 	.submitBtn:hover{
 	color:white; 
-	background-color: skyblue; }
+	background-color: skyblue;}
+	
+	div#Search_bar{
+	text-align : center;
+	}
+	
+	div.button{
+	margin : auto;
+	margin-right : 200px;
+	width : 50%;
+	}
 	
 </style>
 
@@ -121,14 +134,16 @@
 	<!-- /개행 부분 -->
 	
 	<!-- 검색 파트 부분 -->
+	<div id = "Search_bar">
 	<form>
   		<div class="form-group">
-    		<label class="searchPart1" for="searchMenu">요리 정보 검색</label>
-    		<input type="search" class="form-control searchPart2"  style="width: 700px;" id="searchMenu" aria-describedby="searchHlep">
-    		<small id="searchHlep" class="form-text text-muted searchPart3">정보를 알고 싶은 요리명을 입력하시오.</small>
+    		<label class="searchPart1" for="searchMenu" style ="margin : 0 auto;">요리 정보 검색</label>
+    		<input type="search" class="form-control searchPart2"  style="width:700px; left:0; right:0; margin-left:auto; margin-right:auto;" id="searchMenu" aria-describedby="searchHlep">
+    		<small id="searchHlep" class="form-text text-muted searchPart3" >정보를 알고 싶은 요리명을 입력하시오.</small>
   		</div>
   		<button type="submit" class="btn btn-primary center-block submitBtn">Submit</button>
 	</form>
+	</div>
 	<!-- /검색 파트 부분 -->
 
 	<!-- 개행 부분 -->
@@ -137,9 +152,10 @@
 	<!-- /개행 부분 -->
 	
 	<!-- 메뉴 추천 및 레시피 추천 버튼 부분 -->
-	<button type="button" class="btn menuBtn">메뉴 추천</button>
-	<button type="button" class="btn recipeBtn">레시피 추천</button>
-	
+	<div class = "button">
+	<button type="button" class="btn menuBtn" >메뉴 추천</button>
+	<button type="button" class="btn recipeBtn" >레시피 추천</button>
+	</div>
 	<!-- /메뉴 추천 및 레시피 추천 버튼 부분 -->
 
 	<!-- 개행 부분 -->
