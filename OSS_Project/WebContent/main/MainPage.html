@@ -25,9 +25,15 @@
 	.searchPart3 {
 		margin : 30;
 		font-family: 'Jeju Gothic', sans-serif;
-	}        	
+	}
+	.Recommendation_label{
+		margin : 0 auto;
+		font-family: 'Jeju Hallasan', cursive;
+		font-size : 1.5em;
+		color : rgb(0,0,0);
+	}
 	.menuBtn {
-	background : url("/images/menuBtn3.png") no-repeat;
+	 background : url("/images/menuBtn3.png") no-repeat;
 	 padding : 15px;
 	 font-family: 'Jeju Hallasan', cursive;
 	 font-size : 2.5em;
@@ -38,10 +44,11 @@
 	 border-bottom-left-radius: 5px; 
 	 margin-right:0px;
 	 width : 200px;
-	height : 150px;
+	 height : 150px;
 	}
 	
 	.recipeBtn {
+	background : url("/images/menuBtn3.png") no-repeat;
 	padding : 15px;
 	font-family: 'Jeju Hallasan', cursive;
 	font-size : 2em;
@@ -88,12 +95,44 @@
 	div#Search_bar{
 	text-align : center;
 	}
+	div#Recommendation{
+	text-align : center;
+	}
 	
 	div.button{
 	margin : auto;
 	margin-right : 200px;
 	width : 50%;
 	}
+	.exam1Btn{
+	 background : url("/images/exam1.png") no-repeat;
+	 padding : 15px;
+	 font-family: 'Jeju Hallasan', cursive;
+	 font-size : 2.5em;
+	 border: 3px solid skyblue; 
+	 background-color: rgb(255,255,255); 
+	 color: skyblue; 
+	 border-top-left-radius: 5px; 
+	 border-bottom-left-radius: 5px; 
+	 margin-right:0px;
+	 width : 200px;
+	 height : 200px;
+	}
+	.exam2Btn{
+	background : url("/images/exam2.png") no-repeat;
+	padding : 15px;
+	font-family: 'Jeju Hallasan', cursive;
+	font-size : 2em;
+	border: 3px solid skyblue; 
+	background-color: rgb(255,255,255); 
+	color: skyblue; 
+	border-top-right-radius: 5px; 
+	border-bottom-right-radius: 5px; 
+	margin-left:0px;
+	width : 200px;
+	height : 200px;
+	}
+	
 	
 </style>
 
@@ -133,11 +172,26 @@
 	<br>
 	<!-- /개행 부분 -->
 	
+	<!-- 메뉴 추천 및 레시피 추천 사진 링크 부분 -->
+	<div id = "Recommendation">
+	<label class="Recommendation_label" style ="margin : 0 auto; color : skyblue;">오늘의 추천 메뉴&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 오늘의 추천 레시피</label>
+	<br><br>
+	<button type="button" class="btn exam1Btn" ></button>
+	<button type="button" class="btn exam2Btn" ></button>
+	</div>
+	<!-- /메뉴 추천 및 레시피 추천 사진 링크 부분 -->
+
+	<!-- 개행 부분 -->
+	<br>
+	<br>
+	<!-- /개행 부분 -->
+	
+		
 	<!-- 검색 파트 부분 -->
 	<div id = "Search_bar">
 	<form>
   		<div class="form-group">
-    		<label class="searchPart1" for="searchMenu" style ="margin : 0 auto;">요리 정보 검색</label>
+    		<label class="searchPart1" for="searchMenu" style ="margin : 0 auto; color : skyblue;">요리 정보 검색</label>
     		<input type="search" class="form-control searchPart2"  style="width:700px; left:0; right:0; margin-left:auto; margin-right:auto;" id="searchMenu" aria-describedby="searchHlep">
     		<small id="searchHlep" class="form-text text-muted searchPart3" >정보를 알고 싶은 요리명을 입력하시오.</small>
   		</div>
@@ -157,7 +211,7 @@
 	<button type="button" class="btn recipeBtn" >레시피 추천</button>
 	</div>
 	<!-- /메뉴 추천 및 레시피 추천 버튼 부분 -->
-
+	
 	<!-- 개행 부분 -->
 	<br>
 	<br>
