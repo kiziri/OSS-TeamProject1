@@ -74,19 +74,19 @@
 	
 	<!-- /side 파트 부분 -->
 	<div class="float-right">
-	<div class="card" style="width: 18rem;">
-		<img src="C:\Users\ASUS\Desktop\ss.JFIF" width="50" height="50"
+	<div class="card" style="width: 18rem;font-family: 'Jeju Hallasan', cursive;color:skyblue;text-align:center;">
+		<img src="images/exam2.png" width="200" height="200"
 			class="card-img-top" alt="as">
 		<div class="card-body">
-			<h5 class="card-title">Card title</h5>
+			<h5 class="card-title">오늘의 추천 메뉴</h5>
 		</div>
 	</div>
 	
-	<div class="card" style="width: 18rem;">
-	<img src="C:\Users\ASUS\Desktop\ss.JFIF" width="50" height="50"
+	<div class="card" style="width: 18rem;font-family: 'Jeju Hallasan', cursive;text-align:center;color:skyblue;">
+	<img src="images/exam1.png" width="200" height="200"
 		class="card-img-top" alt="as">
 	<div class="card-body">
-		<h5 class="card-title">Card title</h5>
+		<h5 class="card-title">오늘의 추천 레시피</h5>
 	</div>
 	</div>
 </div>
