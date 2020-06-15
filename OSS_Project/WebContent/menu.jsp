@@ -38,13 +38,27 @@
 	margin-left: 0px;
 	}
 	
-	.RecommendationMenu_label{
-		margin : 0 auto;
-		font-family: 'Jeju Gothic', cursive;
-		font-size : 2em;
-		color : rgb(0,0,0);
+	.RecommendationMenu {
+	 background : url("images/RecommendationMenu.png") no-repeat;
+	 padding : 15px;
+	 background-color: rgb(255,255,255);
+	 border-top-left-radius: 5px; 
+	 border-bottom-left-radius: 5px; 
+	 margin-right:0px;
+	 width : 900px;
+	 height : 250px;
 	}
-
+	
+	.Menu {
+	 background : url("images/Menulogo.png") no-repeat;
+	 padding : 15px;
+	 background-color: rgb(255,255,255): 5px; 
+	 border-bottom-left-radius: 5px; 
+	 margin-right:0px;
+	 width : 300px;
+	 height : 140px;
+	}
+	
 </style>
 </head>
 <body>
@@ -73,6 +87,10 @@
 	</nav>
 	<!-- /메뉴바 파트 부분 -->
 	
+	<!-- 메인 커버이미지 -->
+    <img src="images/main-cover.jpg" title = "Main Cover img" style="max-width: 100%; height :auto;">
+    <!-- /메인 커버이미지-->
+    
 	<!-- 메인 배경화면 -->
     <!-- /메인 배경화면 -->
 	
@@ -83,58 +101,66 @@
 	<!-- /개행 부분 -->
 	
 	<h2 class="text-center">
-		<label class="RecommendationMenu_label" style ="margin : 0 auto; color : black;">메뉴 추천</label>
+		<label class="RecommendationMenu" style ="margin : 0 auto;"></label>
 	</h2>
 
 	<button data-toggle="collapse" data-target="#demo">Read</button>
 	<div id="demo" class="collapse">원하는 메뉴를 선택한다</div>
+
 	<br>
-		<div class="float-right">
-	<div class="card" style="width: 18rem;">
-		<img src="C:\Users\ASUS\Desktop\ss.JFIF" width="50" height="50"
-			class="card-img-top" alt="as">
-		<div class="card-body">
-			<h5 class="card-title">Card title</h5>
+	
+	<!-- /side 파트 부분 -->
+	<div class="float-right">
+		<div class="card" style="width: 18rem;font-family: 'Jeju Hallasan', cursive;color:skyblue;text-align:center;">
+			<img src="images/exam2.png" width="150" height="150"
+				class="card-img-top" alt="as">
+			<div class="card-body">
+				<h5 class="card-title">오늘의 추천 메뉴</h5>
+			</div>
+		</div>
+	
+		<div class="card" style="width: 18rem;font-family: 'Jeju Hallasan', cursive;text-align:center;color:skyblue;">
+			<img src="images/exam1.png" width="150" height="150"
+				class="card-img-top" alt="as">
+			<div class="card-body">
+				<h5 class="card-title">오늘의 추천 레시피</h5>
+			</div>
 		</div>
 	</div>
+	<!-- /side 파트 부분 -->
 	
-	<div class="card" style="width: 18rem;">
-	<img src="C:\Users\ASUS\Desktop\ss.JFIF" width="50" height="50"
-		class="card-img-top" alt="as">
-	<div class="card-body">
-		<h5 class="card-title">Card title</h5>
-	</div>
-	</div>
-</div>
 	<div class="container">
-		<div class="jumbotron well">
+		<div class="jumbotron well" style = "background-color:rgb(255,255,204);">
 		<form>
 			<fieldset>
-				<legend>Menu</legend>
+				<label class="Menu" style ="margin : 0 auto;"></label>
 				<!-- 개행 부분 -->
 				<br>
 				<!-- /개행 부분 -->
 				<h2><strong>요리 분류</strong></h2>
 				<h4>
-				<label><input type="checkbox" name="Material" value="mushroom">한식</label>
-				<label><input type="checkbox" name="Material" value="mushroom">중식</label>
-				<label><input type="checkbox" name="Material" value="mushroom">일식</label>
-				<label><input type="checkbox" name="Material" value="mushroom">양식</label>
+				&nbsp;
+				<label><input type="checkbox" name="Material" value="mushroom">한식</label>&ensp;
+				<label><input type="checkbox" name="Material" value="mushroom">중식</label>&ensp;
+				<label><input type="checkbox" name="Material" value="mushroom">일식</label>&ensp;
+				<label><input type="checkbox" name="Material" value="mushroom">양식</label>&ensp;
 				</h4>
 				<!-- 개행 부분 -->
 				<br>
 				<!-- /개행 부분 -->
 				<h2><strong>요리 맛</strong></h2>
 				<h4>
-				<label><input type="checkbox" name="Material" value="vegetable">매운맛</label>
-				<label><input type="checkbox" name="Material" value="vegetable">짠맛</label>
-				<label><input type="checkbox" name="Material" value="vegetable">단맛</label>
+				&nbsp;
+				<label><input type="checkbox" name="Material" value="vegetable">매운맛</label>&ensp;
+				<label><input type="checkbox" name="Material" value="vegetable">짠맛</label>&ensp;
+				<label><input type="checkbox" name="Material" value="vegetable">단맛</label>&ensp;
 				</h4>
 				<!-- 개행 부분 -->
 				<br>
 				<!-- /개행 부분 -->
 				<div class="text-center">
-				<input class="btn btn-primary center-block submitBtn" type="submit" value="Submit">
+				<input class="btn btn-primary center-block submitBtn" type="submit" value="Submit" style ="width : 150px; height: 70px;
+						font-size:1.8em;">
 				</div>
 			</fieldset>
 		</form>
