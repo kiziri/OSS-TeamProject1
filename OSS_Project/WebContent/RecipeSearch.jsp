@@ -30,7 +30,7 @@
 <body>
 	<!-- 메뉴바 파트 부분 -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark nav">
-  		<a class="navbar-brand " href="/main/MainPage.html">오늘의 요리사</a>
+  		<a class="navbar-brand " href="MainPage.html">오늘의 요리사</a>
   		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     	<span class="navbar-toggler-icon"></span>
   		</button>
