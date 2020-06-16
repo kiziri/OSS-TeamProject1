@@ -112,7 +112,7 @@
 	<!-- /side 파트 부분 -->
 	<div class="float-right">
 		<div class="card" style="width: 18rem;font-family: 'Jeju Hallasan', cursive;color:skyblue;text-align:center;">
-			<img src="images/exam2.png" width="150" height="150"
+			<img src="images/exam2.png" width="200" height="200"
 				class="card-img-top" alt="as">
 			<div class="card-body">
 				<h5 class="card-title">오늘의 추천 메뉴</h5>
@@ -120,7 +120,7 @@
 		</div>
 	
 		<div class="card" style="width: 18rem;font-family: 'Jeju Hallasan', cursive;text-align:center;color:skyblue;">
-			<img src="images/exam1.png" width="150" height="150"
+			<img src="images/exam1.png" width="200" height="200"
 				class="card-img-top" alt="as">
 			<div class="card-body">
 				<h5 class="card-title">오늘의 추천 레시피</h5>
@@ -135,26 +135,26 @@
 			<fieldset>
 				<label class="Menu" style ="margin : 0 auto;"></label>
 				<!-- 개행 부분 -->
-				<br>
-				<br>
+				<br><br>
+				<br><br>
 				<!-- /개행 부분 -->
-				<h2><strong>요리 분류</strong></h2>
+				<h2><strong>요리 분류</strong></h2><br>
 				<h4>
 				&nbsp;
-				<label><input type="checkbox" name="Material" value="mushroom">한식</label>&ensp;
-				<label><input type="checkbox" name="Material" value="mushroom">중식</label>&ensp;
-				<label><input type="checkbox" name="Material" value="mushroom">일식</label>&ensp;
-				<label><input type="checkbox" name="Material" value="mushroom">양식</label>&ensp;
+				<label><input type="checkbox" name="Material" value="mushroom">&nbsp;한식</label>&ensp;
+				<label><input type="checkbox" name="Material" value="mushroom">&nbsp;중식</label>&ensp;
+				<label><input type="checkbox" name="Material" value="mushroom">&nbsp;일식</label>&ensp;
+				<label><input type="checkbox" name="Material" value="mushroom">&nbsp;양식</label>&ensp;
 				</h4>
 				<!-- 개행 부분 -->
-				<br>
+				<br><br>
 				<!-- /개행 부분 -->
-				<h2><strong>요리 맛</strong></h2>
+				<h2><strong>요리 맛</strong></h2><br>
 				<h4>
 				&nbsp;
-				<label><input type="checkbox" name="Material" value="vegetable">매운맛</label>&ensp;
-				<label><input type="checkbox" name="Material" value="vegetable">짠맛</label>&ensp;
-				<label><input type="checkbox" name="Material" value="vegetable">단맛</label>&ensp;
+				<label><input type="checkbox" name="Material" value="vegetable">&nbsp;매운맛</label>&ensp;
+				<label><input type="checkbox" name="Material" value="vegetable">&nbsp;짠맛</label>&ensp;
+				<label><input type="checkbox" name="Material" value="vegetable">&nbsp;단맛</label>&ensp;
 				</h4>
 				<!-- 개행 부분 -->
 				<br>
