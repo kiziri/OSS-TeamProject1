@@ -55,8 +55,8 @@
 	 background-color: rgb(255,255,255): 5px; 
 	 border-bottom-left-radius: 5px; 
 	 margin-right:0px;
-	 width : 300px;
-	 height : 140px;
+	 width : 250px;
+	 height : 100px;
 	}
 	
 </style>
@@ -130,11 +130,12 @@
 	<!-- /side 파트 부분 -->
 	
 	<div class="container">
-		<div class="jumbotron well" style = "background-color:rgb(255,255,204);">
+		<div class="jumbotron well" style = "background-color:rgb(245,245,245); color:black;">
 		<form>
 			<fieldset>
 				<label class="Menu" style ="margin : 0 auto;"></label>
 				<!-- 개행 부분 -->
+				<br>
 				<br>
 				<!-- /개행 부분 -->
 				<h2><strong>요리 분류</strong></h2>
