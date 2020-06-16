@@ -72,7 +72,7 @@
 	<br>
 	<!-- /메인제목 파트 부분 -->
 	
-	<!-- /side 파트 부분 -->
+	<!-- side 파트 부분 -->
 	<div class="float-right">
 	<div class="card" style="width: 18rem;font-family: 'Jeju Hallasan', cursive;color:skyblue;text-align:center;">
 		<img src="images/exam2.png" width="200" height="200"
@@ -92,7 +92,7 @@
 </div>
 	<!-- /side 파트 부분 -->
 	
-	<!-- /checkbox 파트 부분 -->
+	<!-- checkbox 파트 부분 -->
 	<div class="container">
 		<div class="jumbotron well" style = "background-color:rgb(153,204,255);color:white;font-family: 'Jeju Gothic', sans-serif;">
 		<form>
