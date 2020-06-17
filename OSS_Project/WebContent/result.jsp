@@ -52,6 +52,9 @@
   			</div>
 	</nav>
 	<!-- /메뉴바 파트 부분 -->
+	<!-- 메인 커버이미지 -->
+    <img src="images/main-cover.jpg" title = "Main Cover img" style="max-width: 100%; height :auto;">
+    <!-- /메인 커버이미지-->
 
 	<br>
 	<br>
