@@ -81,14 +81,15 @@
 </div>
 	<!-- /side 파트 부분 -->
 	<div class="container">
-		<div class="jumbotron well">
-		<img src="" width="100" height="100"
-			class="card-img-top" alt="food">
-			<h2 class="text-right">오늘의 요리사의 추천 결과</h2>
+		<div class="jumbotron well" style = "background-color:rgb(153,204,255);color:white;font-family: 'Jeju Gothic', sans-serif;">
+		<img src="images/exma1.png" width="200" height="200">
+			<h2>추천 결과</h2><br><br>
+			<img src="images/exma1.png" width="200" height="200">
 			<br>
 	<br><br>
 	<br>
-		<h2 class="text-right"> 요리 이름 </h2>
+		<h2>요리 이름 </h2><br><br>
+		<img src="images/exma1.png" width="200" height="200">
 		</div>
 	</div>
 	
