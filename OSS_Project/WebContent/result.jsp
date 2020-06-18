@@ -17,12 +17,47 @@
 @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
 @import url(//fonts.googleapis.com/earlyaccess/jejuhallasan.css);
 
-.nav{
-	background : rgb(0,0,0);
-	color : rgb(255,255,255);
-	font-size : 1em;
-	text-align : center;
-	font-family: 'Jeju Hallasan', cursive;
+	.nav{
+		background : rgb(0,0,0);
+		color : rgb(255,255,255);
+		font-size : 1em;
+		text-align : center;
+		font-family: 'Jeju Hallasan', cursive;
+	}
+	
+
+	.btn {
+ 		display: inline-block;
+  		background: rgb(255,255,255);
+ 		text-transform: uppercase;
+ 		font-family: 'Jeju Gothic', cursive;
+ 		font-size: 1.8em;
+ 		color: white;
+  		border-radius: 0;
+  		padding: 15px;
+  		transition: all 0.7s ease-out;
+  		background: linear-gradient(270deg, rgb(051,102,255), rgb(102,153,255), rgb(153,204,255), rgb(153,204,255));
+  		background-position: 1% 50%;
+  		background-size: 300% 300%;
+  		text-decoration: none;
+  		margin: auto;
+  		border: none;
+  		border: 3px solid rgb(102,153,255);
+  		width : 250px;
+		height : 100px;
+	}
+
+	.btn:hover {
+ 		color: #fff;
+	  	border: 1px solid rgba(223,190,106,0);
+ 	 	color: $white;
+  		background-position: 99% 50%;
+	}
+	
+	.button{
+		margin : auto;
+		margin-right : 280px;
+		width : 50%;
 	}
 
 </style>
@@ -63,7 +98,7 @@
 		background-color:skyblue;color:white;font-size : 1.5em;">검색 결과</span>
 	</h2>
 	<br><br>
-		<!-- side 파트 부분 -->
+	<!-- side 파트 부분 -->
 	<div class="float-right">
 	<div class="card" style="width: 18rem;font-family: 'Jeju Hallasan', cursive;color:skyblue;text-align:center;">
 		<img src="images/exam2.png" width="200" height="200"
@@ -82,18 +117,29 @@
 	</div>
 </div>
 	<!-- /side 파트 부분 -->
+	
+
 	<div class="container">
 		<div class="jumbotron well" style = "background-color:rgb(153,204,255);color:white;font-family: 'Jeju Gothic', sans-serif;">
-		<img src="images/Resultlogo.png" width="300px" height="150px">
+		<img src="images/Resultlogo.png" width="250px" height="130px">
+		<br><br><br>
+			<div class="card" style="width: 18rem; height:275px;font-family: 'Jeju Hallasan', cursive; text-align:center; color:skyblue;
+			margin-left:15px;" onclick = "location.href = 'menu.jsp'">
+			
+				<img src="images/exam1.png" width="200px" height=200
+				class="card-img-top" alt="as">
+					<div class="card-body">
+						<h5 class="card-title"> 고구마 수프 </h5>
+					</div>
+					<br><br><br>
+			</div>
 			<br><br><br>
-	<div class="card" style="width: 18rem;height:275px;font-family: 'Jeju Hallasan', cursive;text-align:center;color:skyblue;
-	margin-left:15px;">
-	<img src="images/exam1.png" width="200px" height=200
-	class="card-img-top" alt="as">
-	<div class="card-body">
-	<h5 class="card-title">오늘의 추천 레시피</h5>
-	</div>
-	<br><br><br>
+			<!-- button 부분 -->
+				<div class = "button">
+					<button type="button" class="btn" onclick="location.href='menu.jsp' " >메뉴 재검색</button>
+					<button type="button" class="btn" onclick="location.href='RecipeSearch.jsp' ">레시피 재검색</button>
+				</div>
+			<!-- /button 부분 -->
 		</div>
 	</div>
 	
