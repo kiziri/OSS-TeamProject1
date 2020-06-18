@@ -56,14 +56,13 @@
     <img src="images/main-cover.jpg" title = "Main Cover img" style="max-width: 100%; height :auto;">
     <!-- /메인 커버이미지-->
 
-	<br>
-	<br>
+	<br><br><br>
 	
 	<h2 class="text-center" >
 		<span class="badge badge-secondary" style="width : 300px; height : 80px; 
 		background-color:skyblue;color:white;font-size : 1.5em;">검색 결과</span>
 	</h2>
-	<br>
+	<br><br>
 		<!-- side 파트 부분 -->
 	<div class="float-right">
 	<div class="card" style="width: 18rem;font-family: 'Jeju Hallasan', cursive;color:skyblue;text-align:center;">
@@ -85,9 +84,10 @@
 	<!-- /side 파트 부분 -->
 	<div class="container">
 		<div class="jumbotron well" style = "background-color:rgb(153,204,255);color:white;font-family: 'Jeju Gothic', sans-serif;">
-		<img src="images/exma1.png" width="200px" height="100px">
-			<h2 style="margin-left:65px;">추천 결과</h2><br>
-	<div class="card" style="width: 18rem;height:275px;font-family: 'Jeju Hallasan', cursive;text-align:center;color:skyblue;">
+		<img src="images/Resultlogo.png" width="300px" height="150px">
+			<br><br><br>
+	<div class="card" style="width: 18rem;height:275px;font-family: 'Jeju Hallasan', cursive;text-align:center;color:skyblue;
+	margin-left:15px;">
 	<img src="images/exam1.png" width="200px" height=200
 	class="card-img-top" alt="as">
 	<div class="card-body">
