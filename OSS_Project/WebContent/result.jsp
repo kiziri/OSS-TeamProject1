@@ -63,6 +63,38 @@
 	display : block;
 	margin : 0 auto;
 	}
+	
+	table.type10 {
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 20px 10px;
+	}
+	table.type10 thead th {
+	    width: 150px;
+	    padding: 10px;
+	    font-weight: bold;
+	    vertical-align: top;
+	    color: #fff;
+	    background: #e7708d;
+	    margin: 20px 10px;
+	}
+	table.type10 tbody th {
+	    width: 150px;
+	    padding: 10px;
+	    color : black;
+	}
+	table.type10 td {
+	    width: 350px;
+	    padding: 10px;
+	    vertical-align: top;
+	    color : black;
+	}
+	table.type10 .even {
+	    background: #fdf3f5;
+	}
 
 </style>
 </head>
@@ -124,7 +156,8 @@
 	
 
 	<div class="container">
-		<div class="jumbotron well" style = "background-color:rgb(153,204,255);color:white;font-family: 'Jeju Gothic', sans-serif; width : 800px; height : 800px;margin : 0 auto;">
+		<div class="jumbotron well" style = "background-color:rgb(153,204,255);color:white;font-family: 'Jeju Gothic', sans-serif; 
+		width : 1000px; height : 800px;margin : 0 auto;">
 		<img src="images/Resultlogo.png" width="250px" height="130px" class = "ResultLogo" >
 		<br><br><br>
 			<div class="card" style="width: 18rem; height:275px;font-family: 'Jeju Hallasan', cursive; text-align:center; color:skyblue;
@@ -135,8 +168,29 @@
 					<div class="card-body">
 						<h5 class="card-title"> 고구마 수프 </h5>
 					</div>
-					<br><br><br>
 			</div>
+			<table class="type10">
+  			  <thead>
+    			<tr>
+        			<th scope="cols">분류</th>
+        			<th scope="cols">내용</th>
+    			</tr>
+   			 </thead>
+   			 <tbody>
+   				 <tr bgcolor = "white">
+       				 <th scope="row">단위 칼로리</th>
+       				 <td>100kcal(예시)</td>
+  				 </tr>
+  			 	<tr>
+        			<th scope="row" class="even">맛</th>
+       				<td class="even">짠 맛(예시)</td>
+   				</tr>
+   				<tr bgcolor = "white">
+       				 <th scope="row">대분류</th>
+      				 <td>중식(예시)</td>
+   				</tr>
+    		</tbody>
+			</table>
 			<br><br><br>
 			<!-- button 부분 -->
 				<div class = "button">
