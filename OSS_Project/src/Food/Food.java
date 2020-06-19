@@ -7,7 +7,14 @@ public class Food {
 	private int FoodCal; //단위 칼로리
 	private int ImageID; //이미지 ID(외래키)
 	private int TasteID; //맛 ID(외래키)
+	private int CategoryID; //대분류 ID(외래키)
 	
+	public int getCategoryID() {
+		return CategoryID;
+	}
+	public void setCategoryID(int categoryID) {
+		CategoryID = categoryID;
+	}
 	public int getTasteID() {
 		return TasteID;
 	}
