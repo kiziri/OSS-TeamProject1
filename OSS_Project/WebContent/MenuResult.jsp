@@ -41,7 +41,6 @@
   		background-size: 300% 300%;
   		text-decoration: none;
   		margin: auto;
-  		margin-left:50px;
   		border: none;
   		border: 3px solid rgb(102,153,255);
   		width : 250px;
@@ -54,14 +53,11 @@
  	 	color: $white;
   		background-position: 99% 50%;
 	}
-	.ResultLogo{
-	display : block;
-	margin : 0 auto;
-	}
 	
-	.card{
-	display : block;
-	margin : 0 auto;
+	.button{
+		margin : auto;
+		margin-right : 280px;
+		width : 50%;
 	}
 
 </style>
@@ -103,32 +99,16 @@
 	</h2>
 	<br><br>
 	<!-- side 파트 부분 -->
-	<div class="float-right">
-	<div class="card" style="width: 18rem;font-family: 'Jeju Hallasan', cursive;color:skyblue;text-align:center;">
-		<img src="images/exam2.png" width="200" height="200"
-			class="card-img-top" alt="as">
-		<div class="card-body">
-			<h5 class="card-title">오늘의 추천 메뉴</h5>
-		</div>
-	</div>
 	
-	<div class="card" style="width: 18rem;font-family: 'Jeju Hallasan', cursive;text-align:center;color:skyblue;">
-	<img src="images/exam1.png" width="200" height="200"
-		class="card-img-top" alt="as">
-	<div class="card-body">
-		<h5 class="card-title">오늘의 추천 레시피</h5>
-	</div>
-	</div>
-</div>
 	<!-- /side 파트 부분 -->
 	
 
 	<div class="container">
-		<div class="jumbotron well" style = "background-color:rgb(153,204,255);color:white;font-family: 'Jeju Gothic', sans-serif; width : 800px; height : 800px;margin : 0 auto;">
-		<img src="images/Resultlogo.png" width="250px" height="130px" class = "ResultLogo" >
+		<div class="jumbotron well" style = "background-color:rgb(153,204,255);color:white;font-family: 'Jeju Gothic', sans-serif;">
+		<img src="images/Resultlogo.png" width="250px" height="130px">
 		<br><br><br>
 			<div class="card" style="width: 18rem; height:275px;font-family: 'Jeju Hallasan', cursive; text-align:center; color:skyblue;
-			margin-left : 10px;">
+			margin-left:15px;" onclick = "location.href = 'menu.jsp'">
 			
 				<img src="images/exam1.png" width="200px" height=200
 				class="card-img-top" alt="as">
