@@ -141,10 +141,10 @@
 				<h2><strong>요리 분류</strong></h2><br>
 				<h4>
 				&nbsp;
-				<label><input type="checkbox" name="Material" value="mushroom">&nbsp;한식</label>&ensp;
-				<label><input type="checkbox" name="Material" value="mushroom">&nbsp;중식</label>&ensp;
-				<label><input type="checkbox" name="Material" value="mushroom">&nbsp;일식</label>&ensp;
-				<label><input type="checkbox" name="Material" value="mushroom">&nbsp;양식</label>&ensp;
+				<label><input type="radio" name="Material" value="Category">&nbsp;한식</label>&ensp;
+				<label><input type="radio" name="Material" value="Category">&nbsp;중식</label>&ensp;
+				<label><input type="radio" name="Material" value="Category">&nbsp;일식</label>&ensp;
+				<label><input type="radio" name="Material" value="Category">&nbsp;양식</label>&ensp;
 				</h4>
 				<!-- 개행 부분 -->
 				<br><br>
@@ -152,9 +152,9 @@
 				<h2><strong>요리 맛</strong></h2><br>
 				<h4>
 				&nbsp;
-				<label><input type="checkbox" name="Material" value="vegetable">&nbsp;매운맛</label>&ensp;
-				<label><input type="checkbox" name="Material" value="vegetable">&nbsp;짠맛</label>&ensp;
-				<label><input type="checkbox" name="Material" value="vegetable">&nbsp;단맛</label>&ensp;
+				<label><input type="radio" name="Material" value="Taste">&nbsp;매운맛</label>&ensp;
+				<label><input type="radio" name="Material" value="Taste">&nbsp;짠맛</label>&ensp;
+				<label><input type="radio" name="Material" value="Taste">&nbsp;단맛</label>&ensp;
 				</h4>
 				<!-- 개행 부분 -->
 				<br>
