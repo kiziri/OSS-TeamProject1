@@ -2,13 +2,13 @@ package Category;
 
 public class Category {
 	
-	private int CategoryID; //카테고리 ID
+	private String CategoryID; //카테고리 ID
 	private String CategoryName; //카테고리 이름(중식, 한식, 일식, 양식)
 	
-	public int getCategoryID() {
+	public String getCategoryID() {
 		return CategoryID;
 	}
-	public void setCategoryID(int categoryID) {
+	public void setCategoryID(String categoryID) {
 		CategoryID = categoryID;
 	}
 	public String getCategoryName() {
@@ -17,5 +17,6 @@ public class Category {
 	public void setCategoryName(String categoryName) {
 		CategoryName = categoryName;
 	}
-
+	
+	
 }
