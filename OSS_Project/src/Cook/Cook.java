@@ -4,13 +4,13 @@ public class Cook {
 	
 	private int IngredientsID; //식재료 ID(외래키)
 	private int RecipeID; //레시피 ID(외래키)
-	private int TasteID; //맛 ID(외래키)
+	private int Taste_ID; //맛 ID(외래키)
 	
 	public int getTasteID() {
-		return TasteID;
+		return Taste_ID;
 	}
 	public void setTasteID(int tasteID) {
-		TasteID = tasteID;
+		Taste_ID = tasteID;
 	}
 	public int getIngredientsID() {
 		return IngredientsID;
