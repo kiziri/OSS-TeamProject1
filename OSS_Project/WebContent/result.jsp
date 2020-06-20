@@ -163,10 +163,10 @@
 		<img src="images/Resultlogo.png" width="250px" height="130px" class = "ResultLogo" >
 		<br><br>
 		
-		<div class = "gridlayout" style ="display: grid; grid-template-columns: 5% 95%;">
+		<div class = "gridlayout" style ="display: grid; grid-template-columns: 1% 99%;">
 			<main class = "main" style ="width: 10%; float: left;">
 				<div>
-					<img src="images/exam1.png" title = "exam" style="width: 250px; height :250px;">
+					<img src="images/exam1.png" title = "exam" style="width: 300px; height :300px;">
 				</div>
 			</main>
 			
