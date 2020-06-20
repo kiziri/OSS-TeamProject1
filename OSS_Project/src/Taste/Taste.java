@@ -2,13 +2,13 @@ package Taste;
 
 public class Taste {
 	
-	private String TasteID; //맛 ID
+	private int TasteID; //맛 ID
 	private String TasteName; //맛 이름(단, 짠, 매운)
 	
-	public String getTasteID() {
+	public int getTasteID() {
 		return TasteID;
 	}
-	public void setTasteID(String tasteID) {
+	public void setTasteID(int tasteID) {
 		TasteID = tasteID;
 	}
 	public String getTasteName() {
