@@ -163,21 +163,15 @@
 		<img src="images/Resultlogo.png" width="250px" height="130px" class = "ResultLogo" >
 		<br><br>
 		
-		<div class = "gridlayout" style ="display: grid; grid-template-columns: 40% 60%;">
-			<main class = "main" style ="width: 5%; float: left;">
-				<div class="card" style="width: 18rem; height:275px;font-family: 'Jeju Hallasan', cursive; text-align:center; color:skyblue;
-					margin-left : 10px;">
-			
-					<img src="images/exam1.png" width="200px" height=200 class="card-img-top" alt="as">
-				
-					<div class="card-body">
-						<h5 class="card-title"> 고구마 수프 </h5>
-					</div>
+		<div class = "gridlayout" style ="display: grid; grid-template-columns: 5% 95%;">
+			<main class = "main" style ="width: 10%; float: left;">
+				<div>
+					<img src="images/exam1.png" title = "exam" style="width: 250px; height :250px;">
 				</div>
 			</main>
 			
-			<aside class = "side" style ="width: 95%; float: right;">
-				<table class="type10">
+			<aside class = "side" style ="width: 90%; float: right;">
+				<table class="type10" style = "width : 500px">
   			 		 <thead>
     					<tr>
         					<th scope="cols">분류</th>
