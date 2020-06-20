@@ -24,6 +24,16 @@
 	text-align : center;
 	font-family: 'Jeju Hallasan', cursive;
 	}
+	
+.Recipe {
+	 background : url("images/Recipelogo.png") no-repeat;
+	 padding : 15px;
+	 background-color: rgb(255,255,255): 5px; 
+	 border-bottom-left-radius: 5px; 
+	 margin-right:0px;
+	 width : 300px;
+	 height : 150px;
+	}
 
 </style>
 </head>
@@ -95,41 +105,64 @@
 	<!-- checkbox 파트 부분 -->
 	<div class="container">
 		<div class="jumbotron well" style = "background-color:rgb(153,204,255);color:white;font-family: 'Jeju Gothic', sans-serif;">
+		<label class="Recipe" style ="margin : 0 auto;"></label>
 		<form>
 			<fieldset>
-				<legend style="font-size:3em;font-family: 'Jeju Hallasan', cursive;">Recipe</legend>
+				
 				<br><br>
 				<h3>버섯</h3>
-				<label><input type="checkbox" name="Material" value="mushroom">&nbsp;송이버섯</label>&nbsp;&nbsp;
-				<label><input type="checkbox" name="Material" value="mushroom">&nbsp;팽이버섯</label>&nbsp;&nbsp;
-				<label><input type="checkbox" name="Material" value="mushroom">&nbsp;느타리버섯</label>&nbsp;&nbsp;
-				<label><input type="checkbox" name="Material" value="mushroom">&nbsp;표고버섯</label>&nbsp;&nbsp;
-				<label><input type="checkbox" name="Material" value="mushroom">&nbsp;양송이버섯</label>
+				<label><input type="checkbox" name="mushroom" value="mushroom">&nbsp;송이버섯</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="mushroom" value="mushroom">&nbsp;팽이버섯</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="mushroom" value="mushroom">&nbsp;느타리버섯</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="mushroom" value="mushroom">&nbsp;표고버섯</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="mushroom" value="mushroom">&nbsp;목이버섯</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="mushroom" value="mushroom">&nbsp;양송이버섯</label>
 				<br><br>
 				<h3>채소</h3>
-				<label><input type="checkbox" name="Material" value="vegetable">&nbsp;감자</label>&nbsp;&nbsp;
-				<label><input type="checkbox" name="Material" value="vegetable">&nbsp;당근</label>&nbsp;&nbsp;
-				<label><input type="checkbox" name="Material" value="vegetable">&nbsp;오이</label>&nbsp;&nbsp;
-				<label><input type="checkbox" name="Material" value="vegetable">&nbsp;양파</label>&nbsp;&nbsp;
-				<label><input type="checkbox" name="Material" value="vegetable">&nbsp;무</label>&nbsp;&nbsp;
-				<label><input type="checkbox" name="Material" value="vegetable">&nbsp;배추</label>&nbsp;&nbsp;
-				<label><input type="checkbox" name="Material" value="vegetable">&nbsp;마늘</label>&nbsp;&nbsp;
-				<label><input type="checkbox" name="Material" value="vegetable">&nbsp;고추</label>&nbsp;&nbsp;
-				<label><input type="checkbox" name="Material" value="vegetable">&nbsp;계란</label>
+				<label><input type="checkbox" name="vegetable" value="vegetable">&nbsp;감자</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="vegetable" value="vegetable">&nbsp;당근</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="vegetable" value="vegetable">&nbsp;오이</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="vegetable" value="vegetable">&nbsp;양파</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="vegetable" value="vegetable">&nbsp;무</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="vegetable" value="vegetable">&nbsp;배추</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="vegetable" value="vegetable">&nbsp;마늘</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="vegetable" value="vegetable">&nbsp;대파</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="vegetable" value="vegetable">&nbsp;죽순</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="vegetable" value="vegetable">&nbsp;팥</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="vegetable" value="vegetable">&nbsp;고추</label>
 				<br><br>
 				<h3>육류</h3>
-				<label><input type="checkbox" name="Material" value="meat">&nbsp;돼지고기</label>&nbsp;&nbsp;
-				<label><input type="checkbox" name="Material" value="meat">&nbsp;소고기</label>&nbsp;&nbsp;
-				<label><input type="checkbox" name="Material" value="meat">&nbsp;닭고기</label>&nbsp;&nbsp;
-				<label><input type="checkbox" name="Material" value="meat">&nbsp;양고기</label>&nbsp;&nbsp;
-				<label><input type="checkbox" name="Material" value="meat">&nbsp;오리고기</label>
+				<label><input type="checkbox" name="meat" value="meat">&nbsp;돼지고기</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="meat" value="meat">&nbsp;소고기</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="meat" value="meat">&nbsp;닭고기</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="meat" value="meat">&nbsp;양고기</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="meat" value="meat">&nbsp;달걀</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="meat" value="meat">&nbsp;오리고기</label>
+				<br><br>
+				<h3>해산물</h3>
+				<label><input type="checkbox" name="fish" value="fish">&nbsp;멸치</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="fish" value="fish">&nbsp;새우</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="fish" value="fish">&nbsp;갑오징어</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="fish" value="fish">&nbsp;전복</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="fish" value="fish">&nbsp;홍합</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="fish" value="fish">&nbsp;오징어</label>
+				<br><br>
+				<h3>소스</h3>
+				<label><input type="checkbox" name="sauce" value="sauce">&nbsp;우스터소스</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="sauce" value="sauce">&nbsp;크림소스</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="sauce" value="sauce">&nbsp;핫소스</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="sauce" value="sauce">&nbsp;돈까스소스</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="sauce" value="sauce">&nbsp;토마토페이스트</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="sauce" value="sauce">&nbsp;바베큐소스</label>
 				<br><br>
 				<h3>면류</h3>
-				<label><input type="checkbox" name="Material" value="noodle">&nbsp;스파게티</label>&nbsp;&nbsp;
-				<label><input type="checkbox" name="Material" value="noodle">&nbsp;소면</label>&nbsp;&nbsp;
-				<label><input type="checkbox" name="Material" value="noodle">&nbsp;당면</label>&nbsp;&nbsp;
-				<label><input type="checkbox" name="Material" value="noodle">&nbsp;칼국수</label>&nbsp;&nbsp;
-				<label><input type="checkbox" name="Material" value="noodle">&nbsp;쫄면</label>		
+				<label><input type="checkbox" name="noodle" value="noodle">&nbsp;스파게티면</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="noodle" value="noodle">&nbsp;소면</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="noodle" value="noodle">&nbsp;당면</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="noodle" value="noodle">&nbsp;칼국수면</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="noodle" value="noodle">&nbsp;중화면</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="noodle" value="noodle">&nbsp;생면</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="noodle" value="noodle">&nbsp;쫄면</label>
 				<br><br>		
 						<input class="btn btn-primary" type="submit" value="Submit" style ="width : 150px; height: 50px;
 						font-size:1.5em;">	
