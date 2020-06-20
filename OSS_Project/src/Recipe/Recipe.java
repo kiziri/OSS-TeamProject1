@@ -4,7 +4,7 @@ public class Recipe {
 	
 	private int RecipeID; //레시피 ID
 	private int FoodID; //식품 ID(외래키)
-	private int ImageID; //이미지 ID(외래키)
+	private int Image_ID; //이미지 ID(외래키)
 	private String Address; //링크 주소
 	
 	public int getRecipeID() {
@@ -20,10 +20,10 @@ public class Recipe {
 		FoodID = foodID;
 	}
 	public int getImageID() {
-		return ImageID;
+		return Image_ID;
 	}
 	public void setImageID(int imageID) {
-		ImageID = imageID;
+		Image_ID = imageID;
 	}
 	public String getAddress() {
 		return Address;
