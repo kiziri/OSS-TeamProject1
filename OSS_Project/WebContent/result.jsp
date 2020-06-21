@@ -179,6 +179,10 @@
     					</tr>
    					 </thead>
    					 <tbody>
+   					 	 <tr bgcolor = "white">
+       				 		<th scope="row">식품 이름</th>
+       						<td>드래곤 짬뽕(예시)</td>
+  						 </tr>
    						 <tr bgcolor = "white">
        				 		<th scope="row">단위 칼로리</th>
        						<td>100kcal(예시)</td>
