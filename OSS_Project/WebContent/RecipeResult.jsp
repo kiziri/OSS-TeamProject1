@@ -24,7 +24,10 @@
 		text-align : center;
 		font-family: 'Jeju Hallasan', cursive;
 	}
-	
+	.ResultLogo{
+	display : block;
+	margin : 0 auto;
+	}
 
 	.btn {
  		display: inline-block;
@@ -41,6 +44,7 @@
   		background-size: 300% 300%;
   		text-decoration: none;
   		margin: auto;
+  		margin-left:50px;
   		border: none;
   		border: 3px solid rgb(102,153,255);
   		width : 250px;
@@ -52,12 +56,6 @@
 	  	border: 1px solid rgba(223,190,106,0);
  	 	color: $white;
   		background-position: 99% 50%;
-	}
-	
-	.button{
-		margin : auto;
-		margin-right : 280px;
-		width : 50%;
 	}
 
 </style>
@@ -98,16 +96,17 @@
 		background-color:skyblue;color:white;font-size : 1.5em;">검색 결과</span>
 	</h2>
 	<br><br>
-	<!-- side 파트 부분 -->
-
-	<!-- /side 파트 부분 -->
-	
+	<!-- 카드 3개 파트 부분 -->
 
 	<div class="container">
-		<div class="jumbotron well" style = "background-color:rgb(153,204,255);color:white;font-family: 'Jeju Gothic', sans-serif;">
-		<img src="images/Resultlogo.png" width="250px" height="130px">
-		<br><br><br>
-			<div class="card" style="width: 18rem; height:275px;font-family: 'Jeju Hallasan', cursive; text-align:center; color:skyblue;
+		<div class="jumbotron well" style = "background-color:rgb(153,204,255);color:white;font-family: 'Jeju Gothic', sans-serif; 
+		width : 1000px; height : 550px;margin : 0 auto;">
+		
+		<img src="images/Resultlogo.png" width="250px" height="130px" class = "ResultLogo" >
+		<br><br>
+		<div class = "gridlayout" style ="display: grid; grid-template-columns: 330px 330px 340px;">
+				<div class = "main" style ="width: 33%; float: left;">
+					<div class="card" style="width: 18rem; height:275px;font-family: 'Jeju Hallasan', cursive; text-align:center; color:skyblue;
 			margin-left:15px;" onclick = "location.href = 'menu.jsp'">
 			
 				<img src="images/exam1.png" width="200px" height=200
@@ -117,10 +116,43 @@
 					</div>
 					<br><br><br>
 			</div>
-			<br><br><br>
+				</div>
+			<aside class = "side" style ="width: 33%; float: right;">
+				<div class="card" style="width: 18rem; height:275px;font-family: 'Jeju Hallasan', cursive; text-align:center; color:skyblue;
+			margin-left:15px;" onclick = "location.href = 'menu.jsp'">
+			
+				<img src="images/exam1.png" width="200px" height=200
+				class="card-img-top" alt="as">
+					<div class="card-body">
+						<h5 class="card-title"> 고구마 수프 </h5>
+					</div>
+					<br><br><br>
+			</div>
+			</aside>
+			<aside class = "side" style ="width: 34%; float: right;">
+				<div class="card" style="width: 18rem; height:275px;font-family: 'Jeju Hallasan', cursive; text-align:center; color:skyblue;
+			margin-left:15px;" onclick = "location.href = 'menu.jsp'">
+			
+				<img src="images/exam1.png" width="200px" height=200
+				class="card-img-top" alt="as">
+					<div class="card-body">
+						<h5 class="card-title"> 고구마 수프 </h5>
+					</div>
+					<br><br><br>
+			</div>
+			</aside>
+		</div>	
+					
+		</div>	
+	</div>
+	<!-- /카드 3개 파트 부분 -->
+	
+	<div class="container">
+		<div class="jumbotron well" style = "background-color:rgb(153,204,255);color:white;font-family: 'Jeju Gothic', sans-serif; 
+		width : 1000px; height : 200px;margin : 0 auto;">
 			<!-- button 부분 -->
 				<div class = "button">
-					<button type="button" class="btn" onclick="location.href='menu.jsp' " >메뉴 재검색</button>
+				 	<button type="button" class="btn" onclick="location.href='menu.jsp' " >메뉴 재검색</button>
 					<button type="button" class="btn" onclick="location.href='RecipeSearch.jsp' ">레시피 재검색</button>
 				</div>
 			<!-- /button 부분 -->
