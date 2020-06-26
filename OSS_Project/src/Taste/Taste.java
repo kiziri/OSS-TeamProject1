@@ -5,6 +5,12 @@ public class Taste {
 	private int TasteID; //맛 ID
 	private String TasteName; //맛 이름(단, 짠, 매운)
 	
+	public Taste(int tasteID, String tasteName) {
+		super();
+		TasteID = tasteID;
+		TasteName = tasteName;
+	}
+	
 	public int getTasteID() {
 		return TasteID;
 	}
