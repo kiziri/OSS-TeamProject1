@@ -5,6 +5,11 @@ public class Ingredients {
 	private int IngredientsID; //식재료 ID
 	private String IngredientsName; //식재료 이름
 	
+	public Ingredients(int ingredientsID, String ingredientsName) {
+		super();
+		IngredientsID = ingredientsID;
+		IngredientsName = ingredientsName;
+	}
 	
 	public int getIngredientsID() {
 		return IngredientsID;
