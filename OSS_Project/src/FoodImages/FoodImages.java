@@ -3,8 +3,9 @@ package FoodImages;
 public class FoodImages {
 	
 	private int ImageID; //이미지 ID
-	private String FilePath; // 이미지 경로
-	
+	private int width; //가로 길이
+	private int height; //세로 길이
+	private int filesize; //이미지 파일 크기
 	
 	public int getImageID() {
 		return ImageID;
@@ -12,12 +13,23 @@ public class FoodImages {
 	public void setImageID(int imageID) {
 		ImageID = imageID;
 	}
-	public String getFilePath() {
-		return FilePath;
+	public int getWidth() {
+		return width;
 	}
-	public void setFilePath(String filePath) {
-		FilePath = filePath;
+	public void setWidth(int width) {
+		this.width = width;
+	}
+	public int getHeight() {
+		return height;
+	}
+	public void setHeight(int height) {
+		this.height = height;
+	}
+	public int getFilesize() {
+		return filesize;
+	}
+	public void setFilesize(int filesize) {
+		this.filesize = filesize;
 	}
 	
-
 }
