@@ -6,6 +6,12 @@ public class FoodImages {
 	private String FilePath; // 이미지 경로
 	
 	
+	public FoodImages(int imageID, String filePath) {
+		super();
+		ImageID = imageID;
+		FilePath = filePath;
+	}
+	
 	public int getImageID() {
 		return ImageID;
 	}
