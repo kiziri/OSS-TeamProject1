@@ -6,6 +6,9 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 
 import Food.Food;
+import FoodImages.FoodImages;
+import Taste.Taste;
+import Category.Category;
 import util.DBManager;
 
 public class FoodDAO {
