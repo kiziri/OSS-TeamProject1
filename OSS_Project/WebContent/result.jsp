@@ -20,7 +20,7 @@
 	.nav{
 		background : rgb(0,0,0);
 		color : rgb(255,255,255);
-		font-size : 1em;
+		font-size : 1.5em;
 		text-align : center;
 		font-family: 'Jeju Hallasan', cursive;
 	}
@@ -101,29 +101,29 @@
 </head>
 <body>
 	<!-- 메뉴바 파트 부분 -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark nav">
-  		<a class="navbar-brand " href="MainPage.html">오늘의 요리사</a>
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    	<span class="navbar-toggler-icon"></span>
-  		</button>
-  			<div class="collapse navbar-collapse" id="navbarNav">
-    			<ul class="navbar-nav">
-      			<li class="nav-item active">
-        			<a class="nav-link" href="MainPage.html">Home<span class="sr-only">(current)</span></a>
-      			</li>
-      			<li class="nav-item">
-        			<a class="nav-link" href="/search/">요리 검색</a>
-      			</li>      			
-      			<li class="nav-item">
-        			<a class="nav-link" href="menu.jsp">메뉴 추천</a>
-      			</li>
-      			<li class="nav-item">
-        			<a class="nav-link" href="RecipeSearch.jsp">레시피 추천</a>
-      			</li>
-    			</ul>
-  			</div>
-	</nav>
-	<!-- /메뉴바 파트 부분 -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav">
+        <a class="navbar-brand " href="MainPage.html">   <img src="images/logoimage.png" width="200px" height="50px" class = "LogoImage" ></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+        </button>
+           <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav">
+               <li class="nav-item active">
+                 <a class="nav-link" href="MainPage.html">Home<span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="/search/">요리 검색</a>
+               </li>               
+               <li class="nav-item">
+                 <a class="nav-link" href="menu.jsp">메뉴 추천</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="RecipeSearch.jsp">레시피 추천</a>
+               </li>
+             </ul>
+           </div>
+   </nav>
+   <!-- /메뉴바 파트 부분 -->
 	<!-- 메인 커버이미지 -->
     <img src="images/main-cover.jpg" title = "Main Cover img" style="max-width: 100%; height :auto;">
     <!-- /메인 커버이미지-->
