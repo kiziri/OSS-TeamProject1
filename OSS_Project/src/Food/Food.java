@@ -19,6 +19,15 @@ public class Food {
 		CategoryID = categoryID;
 	}
 	
+	
+	public Food(int foodID, String foodName, int imageID) {
+		super();
+		FoodID = foodID;
+		FoodName = foodName;
+		ImageID = imageID;
+	}
+
+
 	public int getCategoryID() {
 		return CategoryID;
 	}
