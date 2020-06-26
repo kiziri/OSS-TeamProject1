@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 import Cook.Cook;
 import util.DBManager;
+import Ingredients.Ingredients;
 
 public class CookDAO {
 	//재료, 레시피, 맛 아이디 가져오기(외래키)
