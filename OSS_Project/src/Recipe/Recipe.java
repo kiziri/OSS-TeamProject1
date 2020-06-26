@@ -7,6 +7,15 @@ public class Recipe {
 	private int Image_ID; //이미지 ID(외래키)
 	private String Address; //링크 주소
 	
+	
+	public Recipe(int recipeID, int foodID, int image_ID, String address) {
+		super();
+		RecipeID = recipeID;
+		FoodID = foodID;
+		Image_ID = image_ID;
+		Address = address;
+	}
+	
 	public int getRecipeID() {
 		return RecipeID;
 	}
