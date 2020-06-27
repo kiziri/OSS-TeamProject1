@@ -17,7 +17,8 @@ public class CookDAO {
 		Connection con =null;
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
-		String sql = 
+		String sql = "";
+		
 		ArrayList<Cook> list = new ArrayList<Cook>();
 		
 		try {

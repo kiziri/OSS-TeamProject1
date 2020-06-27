@@ -16,7 +16,7 @@ public class RecipeDAO {
 		Connection con =null;
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
-		String sql = 
+		String sql = "";
 				
 		ArrayList<Recipe> list = new ArrayList<Recipe>();
 		
