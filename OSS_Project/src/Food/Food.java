@@ -9,6 +9,7 @@ public class Food {
 	private int TasteID; //맛 ID(외래키)
 	private int CategoryID; //대분류 ID(외래키)
 	
+	// 검색창 입력값  결과 조회
 	public Food(int foodID, String foodName, int foodCal, int imageID, int tasteID, int categoryID) {
 		super();
 		FoodID = foodID;
@@ -19,7 +20,7 @@ public class Food {
 		CategoryID = categoryID;
 	}
 	
-	
+	// 메뉴 결과 입력값 조회
 	public Food(int foodID, String foodName, int imageID) {
 		super();
 		FoodID = foodID;
