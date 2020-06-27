@@ -10,11 +10,12 @@ import util.DBManager;
 
 public class IngredientsDAO {
 
+	// 식재료 조건 검색 
 	public ArrayList<Ingredients> select() throws Exception {
 		Connection con =null;
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
-		String sql =
+		String sql = "";
 				
 		ArrayList<Ingredients> list = new ArrayList<Ingredients>();
 		
@@ -23,7 +24,7 @@ public class IngredientsDAO {
 			stmt = con.prepareStatement(sql);
 			rs = stmt.executeQuery();
 			while (rs.next()) {
-				
+				list.add(new Ingredients(rs.getInt(0), rs.getNString(1)));
 			}
 		}
 		finally {

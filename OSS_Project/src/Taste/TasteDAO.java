@@ -9,12 +9,13 @@ import util.DBManager;
 import Taste.Taste;
 
 public class TasteDAO {
-	//맛 선택(조회)??
+	
+	//맛 조건 검색 결과
 	public ArrayList<Taste> select(String TasteName, String TasteID) throws Exception{
 	Connection con =null;
 	PreparedStatement stmt = null;
 	ResultSet rs = null;
-	String sql =
+	String sql = "";
 			
 	ArrayList<Taste> list = new ArrayList<Taste>();
 	
@@ -23,7 +24,7 @@ public class TasteDAO {
 		stmt = con.prepareStatement(sql);
 		rs = stmt.executeQuery();
 		while (rs.next()) {
-			
+			list.add(new Taste(rs.getInt(0), rs.getString(1)));
 		}
 	}
 	finally {

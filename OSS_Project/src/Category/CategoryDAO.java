@@ -10,11 +10,12 @@ import util.DBManager;
 
 public class CategoryDAO {
 
+	// 카테고리 조건 검색 조회
 	public ArrayList<Category> select() throws Exception {
 		Connection con =null;
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
-		String sql = 
+		String sql = "";
 				
 		ArrayList<Category> list = new ArrayList<Category>();
 		
@@ -23,7 +24,7 @@ public class CategoryDAO {
 			stmt = con.prepareStatement(sql);
 			rs = stmt.executeQuery();
 			while (rs.next()) {
-				
+				list.add(new Category(rs.getInt(0), rs.getString(1)));
 			}
 		}
 		finally {
