@@ -14,7 +14,7 @@ public class FoodImagesDAO {
 		Connection con =null;
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
-		String sql = 
+		String sql = "";
 				
 		ArrayList<FoodImages> list = new ArrayList<FoodImages>();
 		
