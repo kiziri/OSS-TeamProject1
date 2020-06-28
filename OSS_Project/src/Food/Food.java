@@ -38,41 +38,44 @@ public class Food {
 		this.ImageID = imageID;
 	}
 
-
-	public int getCategoryID() {
-		return CategoryID;
-	}
-	public void setCategoryID(int categoryID) {
-		CategoryID = categoryID;
-	}
-	public int getTasteID() {
-		return TasteID;
-	}
-	public void setTasteID(int tasteID) {
-		TasteID = tasteID;
-	}
 	public int getFoodID() {
 		return FoodID;
 	}
 	public void setFoodID(int foodID) {
-		FoodID = foodID;
+		this.FoodID = foodID;
 	}
 	public String getFoodName() {
 		return FoodName;
 	}
 	public void setFoodName(String foodName) {
-		FoodName = foodName;
+		this.FoodName = foodName;
 	}
 	public int getFoodCal() {
 		return FoodCal;
 	}
 	public void setFoodCal(int foodCal) {
-		FoodCal = foodCal;
+		this.FoodCal = foodCal;
 	}
 	public int getImageID() {
 		return ImageID;
 	}
 	public void setImageID(int imageID) {
-		ImageID = imageID;
+		this.ImageID = imageID;
 	}
+	public int getTasteID() {
+		return TasteID;
+	}
+	public void setTasteID(int tasteID) {
+		this.TasteID = tasteID;
+	}
+	public int getCategoryID() {
+		return CategoryID;
+	}
+	public void setCategoryID(int categoryID) {
+		this.CategoryID = categoryID;
+	}
+
+
+
+
 }
