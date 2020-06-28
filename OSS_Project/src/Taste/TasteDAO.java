@@ -24,7 +24,7 @@ public class TasteDAO {
 		stmt = con.prepareStatement(sql);
 		rs = stmt.executeQuery();
 		while (rs.next()) {
-			list.add(new Taste(rs.getInt(0), rs.getString(1)));
+			list.add(new Taste(rs.getInt(1), rs.getString(2)));
 		}
 	}
 	finally {

@@ -24,7 +24,7 @@ public class IngredientsDAO {
 			stmt = con.prepareStatement(sql);
 			rs = stmt.executeQuery();
 			while (rs.next()) {
-				list.add(new Ingredients(rs.getInt(0), rs.getNString(1)));
+				list.add(new Ingredients(rs.getInt(1), rs.getNString(2)));
 			}
 		}
 		finally {
