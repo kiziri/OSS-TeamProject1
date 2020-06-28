@@ -166,7 +166,7 @@
 		<div class = "gridlayout" style ="display: grid; grid-template-columns: 1% 99%;">
 			<main class = "main" style ="width: 10%; float: left;">
 				<div>
-					<img src="images/exam1.png" title = "exam" style="width: 300px; height :300px;">
+					<img src="${ list.ImageID }" title = "exam" style="width: 300px; height :300px;">
 				</div>
 			</main>
 			
@@ -181,19 +181,19 @@
    					 <tbody>
    					 	 <tr bgcolor = "white">
        				 		<th scope="row">식품 이름</th>
-       						<td>드래곤 짬뽕(예시)</td>
+       						<td>${ list.FoodName }</td>
   						 </tr>
    						 <tr bgcolor = "white">
        				 		<th scope="row">단위 칼로리</th>
-       						<td>100kcal(예시)</td>
+       						<td>${ list.FoodCal }Kcal</td>
   						 </tr>
   			 			<tr>
         					<th scope="row" class="even">맛</th>
-       						<td class="even">짠 맛(예시)</td>
+       						<td class="even">${ list.TasteID }</td>
    						</tr>
    						<tr bgcolor = "white">
        						<th scope="row">대분류</th>
-      						<td>중식(예시)</td>
+      						<td>${ list.CategoryID }</td>
    						</tr>
     				</tbody>
 				</table>
