@@ -20,7 +20,7 @@ public class FoodDAO {
 		ResultSet rs = null;
 		String sql = "SELECT * FROM food WHERE FoodName = ?";
 				
-		ArrayList<Food> list = new ArrayList<Food>();
+		ArrayList<Food> detaillist = new ArrayList<Food>();
 		
 		try {
 			con = DBManager.getConnection();
@@ -28,14 +28,14 @@ public class FoodDAO {
 			pstmt.setString(1, "%"+FoodName+"%");
 			rs = pstmt.executeQuery();
 			while (rs.next()) {
-				list.add(new Food(rs.getInt(1), rs.getString(2), rs.getInt(3), rs.getInt(4), rs.getInt(5), rs.getInt(6)));
-					System.out.println(list.get(0).toString());
+				detaillist.add(new Food(rs.getInt(1), rs.getString(2), rs.getInt(3), rs.getInt(4), rs.getInt(5), rs.getInt(6)));
+					System.out.println(detaillist.get(0).toString());
 			}
 		}
 		finally {
 			DBManager.close(rs, pstmt, con);
 		}
 		
-		return list;
+		return detaillist;
 	}
 }
