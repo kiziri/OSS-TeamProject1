@@ -9,23 +9,33 @@ public class Food {
 	private int TasteID; //맛 ID(외래키)
 	private int CategoryID; //대분류 ID(외래키)
 	
-	// 검색창 입력값  결과 조회
+	// 전체 조회
 	public Food(int foodID, String foodName, int foodCal, int imageID, int tasteID, int categoryID) {
 		super();
-		FoodID = foodID;
-		FoodName = foodName;
-		FoodCal = foodCal;
-		ImageID = imageID;
-		TasteID = tasteID;
-		CategoryID = categoryID;
+		this.FoodID = foodID;
+		this.FoodName = foodName;
+		this.FoodCal = foodCal;
+		this.ImageID = imageID;
+		this.TasteID = tasteID;
+		this.CategoryID = categoryID;
+	}
+	
+	// 검색창 입력값  결과 조회
+	public Food(String foodName, int foodCal, int imageID, int tasteID, int categoryID) {
+		super();
+		this.FoodName = foodName;
+		this.FoodCal = foodCal;
+		this.ImageID = imageID;
+		this.TasteID = tasteID;
+		this.CategoryID = categoryID;
 	}
 	
 	// 메뉴 결과 입력값 조회
 	public Food(int foodID, String foodName, int imageID) {
 		super();
-		FoodID = foodID;
-		FoodName = foodName;
-		ImageID = imageID;
+		this.FoodID = foodID;
+		this.FoodName = foodName;
+		this.ImageID = imageID;
 	}
 
 
