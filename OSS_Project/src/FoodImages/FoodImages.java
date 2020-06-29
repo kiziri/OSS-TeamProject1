@@ -2,28 +2,29 @@ package FoodImages;
 
 public class FoodImages {
 	
-	private int ImageID; //이미지 ID
-	private String FilePath; // 이미지 경로
+	private int imageId; //이미지 ID
+	private String filePath; // 이미지 경로
 	
-	
-	public FoodImages(int imageID, String filePath) {
+	public FoodImages(int imageId, String filePath) {
 		super();
-		ImageID = imageID;
-		FilePath = filePath;
+		this.imageId = imageId;
+		this.filePath = filePath;
 	}
 	
-	public int getImageID() {
-		return ImageID;
+	public int getImageId() {
+		return imageId;
 	}
-	public void setImageID(int imageID) {
-		ImageID = imageID;
+	public void setImageId(int imageId) {
+		this.imageId = imageId;
 	}
 	public String getFilePath() {
-		return FilePath;
+		return filePath;
 	}
 	public void setFilePath(String filePath) {
-		FilePath = filePath;
+		this.filePath = filePath;
 	}
+	
+	
 	
 
 }
