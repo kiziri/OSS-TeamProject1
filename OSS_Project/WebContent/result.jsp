@@ -167,7 +167,7 @@
 		<div class = "gridlayout" style ="display: grid; grid-template-columns: 1% 99%;">
 			<main class = "main" style ="width: 10%; float: left;">
 				<div>
-					<img src="" title = "exam" style="width: 300px; height :300px;">
+					<img src="${ list[0].imageId }" title = "exam" style="width: 300px; height :300px;">
 				</div>
 			</main>
 			
@@ -182,19 +182,19 @@
    					 <tbody>
    					 	 <tr bgcolor = "white">
        				 		<th scope="row">식품 이름</th>
-       						<td>${ list.FoodName }</td>
+       						<td>${ list[0].foodName }</td>
   						 </tr>
    						 <tr bgcolor = "white">
        				 		<th scope="row">단위 칼로리</th>
-       						<td>${ list.FoodCal }Kcal</td>
+       						<td>${ list[0].foodCal }Kcal</td>
   						 </tr>
   			 			<tr>
         					<th scope="row" class="even">맛</th>
-       						<td class="even">${ list.TasteID }</td>
+       						<td class="even">${ list[0].tasteId }</td>
    						</tr>
    						<tr bgcolor = "white">
        						<th scope="row">대분류</th>
-      						<td>${ list.CategoryID }</td>
+      						<td>${ list[0].categoryId }</td>
    						</tr>
     				</tbody>
 				</table>
