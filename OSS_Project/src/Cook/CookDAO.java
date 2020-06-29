@@ -5,11 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-import Cook.Cook;
 import util.DBManager;
-import Ingredients.Ingredients;
-import Recipe.Recipe;
-import Taste.Taste;
 
 public class CookDAO {
 	//재료, 레시피, 맛 아이디 가져오기(외래키)
