@@ -1,5 +1,3 @@
-
-
 package Food;
 
 import java.sql.Connection;
@@ -16,10 +14,12 @@ public class FoodDAO {
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
-		String foodSql = "SELECT FoodName, FoodCal, ImageID, TasteID, CategoryID FROM food WHERE FoodName = ?";
-		String findIdDataSql = "";
+		String foodSql = "SELECT FoodName, FoodCal, FilePath, CategoryName, TasteName \r\n" + 
+						"FROM food f, foodimage i, taste t, category c WHERE f.FoodName = ? AND \r\n" + 
+						"i.ImageID = f.ImageID AND t.TasteID = f.TasteID AND c.CategoryID = f.CategoryID;";
 
-		ArrayList<Food> detaillist = new ArrayList<Food>();
+		ArrayList<Food> foodList = new ArrayList<Food>();
+
 		
 		try {
 			con = DBManager.getConnection();
@@ -27,12 +27,14 @@ public class FoodDAO {
 			pstmt.setString(1, FoodName);
 			rs = pstmt.executeQuery();
 			while (rs.next()) {
-				detaillist.add(new Food(0, rs.getString(1), rs.getInt(2), rs.getInt(3), rs.getInt(4), rs.getInt(5)));
+				foodList.add(new Food(rs.getString(1), rs.getInt(2), rs.getString(3), rs.getString(4), rs.getString(5)));
 			}
+			
+			
 		} finally {
 			DBManager.close(rs, pstmt, con);
 		}
 
-		return detaillist;
+		return foodList;
 	}
 }

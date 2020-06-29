@@ -167,7 +167,7 @@
 		<div class = "gridlayout" style ="display: grid; grid-template-columns: 1% 99%;">
 			<main class = "main" style ="width: 10%; float: left;">
 				<div>
-					<img src="${ list[0].imageId }" title = "exam" style="width: 300px; height :300px;">
+					<img src="/${ list[0].filePath }" title = "exam" style="width: 300px; height :300px;">
 				</div>
 			</main>
 			
@@ -190,11 +190,11 @@
   						 </tr>
   			 			<tr>
         					<th scope="row" class="even">맛</th>
-       						<td class="even">${ list[0].tasteId }</td>
+       						<td class="even">${ list[0].tasteName }</td>
    						</tr>
    						<tr bgcolor = "white">
        						<th scope="row">대분류</th>
-      						<td>${ list[0].categoryId }</td>
+      						<td>${ list[0].categoryName }</td>
    						</tr>
     				</tbody>
 				</table>

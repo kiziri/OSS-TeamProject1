@@ -1,31 +1,25 @@
 package Food;
 
 public class Food {
-	private int foodId; // 식품 ID
 	private String foodName; // 식품 이름
 	private int foodCal; // 단위 칼로리
-	private int imageId; // 이미지 ID(외래키)
-	private int tasteId; //맛 ID(외래키)
-	private int categoryId; //대분류 ID(외래키)
+	private String filePath; // 이미지 테이블(외래키로 참조하여 데이터로 가져옴)
+	private String tasteName; //맛 테이블(외래키로 참조하여 데이터로 가져옴)
+	private String categoryName; //대분류 테이블(외래키로 참조하여 데이터로 가져옴)
+	
+	// 초기화 생성자
 	public Food() {
 
 	}
 
-	public Food(int foodId, String foodName, int foodCal, int imageId, int tasteId, int categoryId) {
-		this.foodId = foodId;
+	// 검색 조회 참조
+	public Food(String foodName, int foodCal, String filePath, String tasteName, String categoryName) {
+		super();
 		this.foodName = foodName;
 		this.foodCal = foodCal;
-		this.imageId = imageId;
-		this.tasteId = tasteId;
-		this.categoryId = categoryId;
-	}
-
-	public int getFoodId() {
-		return foodId;
-	}
-
-	public void setFoodId(int foodId) {
-		this.foodId = foodId;
+		this.filePath = filePath;
+		this.tasteName = tasteName;
+		this.categoryName = categoryName;
 	}
 
 	public String getFoodName() {
@@ -44,28 +38,29 @@ public class Food {
 		this.foodCal = foodCal;
 	}
 
-	public int getImageId() {
-		return imageId;
+	public String getFilePath() {
+		return filePath;
 	}
 
-	public void setImageId(int imageId) {
-		this.imageId = imageId;
+	public void setFilePath(String filePath) {
+		this.filePath = filePath;
 	}
 
-	public int getTasteId() {
-		return tasteId;
+	public String getTasteName() {
+		return tasteName;
 	}
 
-	public void setTestId(int testId) {
-		this.tasteId = testId;
+	public void setTasteName(String tasteName) {
+		this.tasteName = tasteName;
 	}
 
-	public int getCategoryId() {
-		return categoryId;
+	public String getCategoryName() {
+		return categoryName;
 	}
 
-	public void setCategoryId(int categoryId) {
-		this.categoryId = categoryId;
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
 	}
+	
 
 }
