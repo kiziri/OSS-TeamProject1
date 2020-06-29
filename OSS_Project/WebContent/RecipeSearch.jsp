@@ -111,7 +111,7 @@
 				
 				<br><br>
 				<h3>버섯</h3>
-				<label><input type="checkbox" name="mushroom" value="mushroom">&nbsp;송이버섯</label>&nbsp;&nbsp;
+				<label><input type="checkbox" name="mushroom" value="송이버섯">&nbsp;송이버섯</label>&nbsp;&nbsp;
 				<label><input type="checkbox" name="mushroom" value="mushroom">&nbsp;팽이버섯</label>&nbsp;&nbsp;
 				<label><input type="checkbox" name="mushroom" value="mushroom">&nbsp;느타리버섯</label>&nbsp;&nbsp;
 				<label><input type="checkbox" name="mushroom" value="mushroom">&nbsp;표고버섯</label>&nbsp;&nbsp;
