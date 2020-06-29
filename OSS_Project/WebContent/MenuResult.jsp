@@ -127,7 +127,7 @@
 				<img src="/${ list[1].filePath }" width="200px" height=200
 				class="card-img-top" alt="as">
 					<div class="card-body">
-						<h5 class="card-title"> ${ list[2].foodName } </h5>
+						<h5 class="card-title"> ${ list[1].foodName } </h5>
 					</div>
 					<br><br><br>
 			</div>
