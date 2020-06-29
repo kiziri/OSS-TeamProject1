@@ -22,7 +22,7 @@ public class CookDAO {
 			stmt = con.prepareStatement(sql);
 			rs = stmt.executeQuery();
 			while (rs.next()) {
-						}
+			}
 		}
 		finally {
 			DBManager.close(rs, stmt, con);
