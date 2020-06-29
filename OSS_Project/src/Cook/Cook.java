@@ -11,5 +11,27 @@ public class Cook {
 	}
 	
 	// 메뉴 추천 조회 참조
+	public Cook(String foodName, String filePath) {
+		super();
+		this.foodName = foodName;
+		this.filePath = filePath;
+	}
+	
+	public String getFoodName() {
+		return foodName;
+	}
+
+	public void setFoodName(String foodName) {
+		this.foodName = foodName;
+	}
+
+	public String getFilePath() {
+		return filePath;
+	}
+
+	public void setFilePath(String filePath) {
+		this.filePath = filePath;
+	}
+	
 	
 }
