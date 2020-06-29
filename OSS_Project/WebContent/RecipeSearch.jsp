@@ -106,7 +106,7 @@
 	<div class="container">
 		<div class="jumbotron well" style = "background-color:rgb(153,204,255);color:white;font-family: 'Jeju Gothic', sans-serif;">
 		<label class="Recipe" style ="margin : 0 auto;"></label>
-		<form>
+		<form action=/RecipeResult.do method="get">
 			<fieldset>
 				
 				<br><br>
