@@ -29,14 +29,6 @@ public class Food {
 		this.TasteID = tasteID;
 		this.CategoryID = categoryID;
 	}
-	
-	// 메뉴 결과 입력값 조회
-	public Food(int foodID, String foodName, int imageID) {
-		super();
-		this.FoodID = foodID;
-		this.FoodName = foodName;
-		this.ImageID = imageID;
-	}
 
 	public int getFoodID() {
 		return FoodID;
