@@ -2,36 +2,14 @@ package Cook;
 
 public class Cook {
 	
-	private int ingredientsId; //식재료 ID(외래키)
-	private int recipeId; //레시피 ID(외래키)
-	private int taste_Id; //맛 ID(외래키)
+	private String foodName; // 식품 이름
+	private String filePath; // 이미지 테이블(외래키로 참조하여 데이터로 가져옴)
 	
-	public Cook(int ingredientsId, int recipeId, int taste_Id) {
-		super();
-		this.ingredientsId = ingredientsId;
-		this.recipeId = recipeId;
-		this.taste_Id = taste_Id;
+	// 초기화 생성자
+	public Cook() {
+		
 	}
 	
-	public int getIngredientsId() {
-		return ingredientsId;
-	}
-	public void setIngredientsId(int ingredientsId) {
-		this.ingredientsId = ingredientsId;
-	}
-	public int getRecipeId() {
-		return recipeId;
-	}
-	public void setRecipeId(int recipeId) {
-		this.recipeId = recipeId;
-	}
-	public int getTaste_Id() {
-		return taste_Id;
-	}
-	public void setTaste_Id(int taste_Id) {
-		this.taste_Id = taste_Id;
-	}
-
-	
+	// 메뉴 추천 조회 참조
 	
 }
