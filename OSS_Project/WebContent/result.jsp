@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -166,7 +167,7 @@
 		<div class = "gridlayout" style ="display: grid; grid-template-columns: 1% 99%;">
 			<main class = "main" style ="width: 10%; float: left;">
 				<div>
-					<img src="${ list.ImageID }" title = "exam" style="width: 300px; height :300px;">
+					<img src="" title = "exam" style="width: 300px; height :300px;">
 				</div>
 			</main>
 			
