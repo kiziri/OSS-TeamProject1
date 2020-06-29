@@ -9,7 +9,7 @@ import util.DBManager;
 
 public class CookDAO {
 	//재료, 레시피, 맛 아이디 가져오기(외래키)
-	public ArrayList<Cook> select() throws Exception{
+	public ArrayList<Cook> suggest(String taste, String cat) throws Exception{
 		Connection con =null;
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
