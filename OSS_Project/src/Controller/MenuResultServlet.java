@@ -24,7 +24,6 @@ public class MenuResultServlet extends HttpServlet {
 			request.setCharacterEncoding("utf-8");
 			String cat = request.getParameter("Category");
 			String taste = request.getParameter("Taste");
-			System.out.println(taste + " " + cat);
 			request.setAttribute("list", cService.suggest(taste, cat));
 			request.getRequestDispatcher("/MenuResult.jsp").forward(request, response);
 		}
