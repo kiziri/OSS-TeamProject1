@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -111,10 +112,10 @@
 					<div class="card" style="width: 18rem; height:275px;font-family: 'Jeju Hallasan', cursive; text-align:center; color:skyblue;
 			margin-left:15px;" onclick = "location.href = 'menu.jsp'">
 			
-				<img src="images/exam1.png" width="200px" height=200
+				<img src="/${ list[0].filePath }" width="200px" height=200
 				class="card-img-top" alt="as">
 					<div class="card-body">
-						<h5 class="card-title"> 고구마 수프 </h5>
+						<h5 class="card-title"> ${ list[0].foodName } </h5>
 					</div>
 					<br><br><br>
 			</div>
@@ -123,10 +124,10 @@
 				<div class="card" style="width: 18rem; height:275px;font-family: 'Jeju Hallasan', cursive; text-align:center; color:skyblue;
 			margin-left:15px;" onclick = "location.href = 'menu.jsp'">
 			
-				<img src="images/exam1.png" width="200px" height=200
+				<img src="/${ list[1].filePath }" width="200px" height=200
 				class="card-img-top" alt="as">
 					<div class="card-body">
-						<h5 class="card-title"> 고구마 수프 </h5>
+						<h5 class="card-title"> ${ list[2].foodName } </h5>
 					</div>
 					<br><br><br>
 			</div>
@@ -135,10 +136,10 @@
 				<div class="card" style="width: 18rem; height:275px;font-family: 'Jeju Hallasan', cursive; text-align:center; color:skyblue;
 			margin-left:15px;" onclick = "location.href = 'menu.jsp'">
 			
-				<img src="images/exam1.png" width="200px" height=200
+				<img src="/${ list[2].filePath }" width="200px" height=200
 				class="card-img-top" alt="as">
 					<div class="card-body">
-						<h5 class="card-title"> 고구마 수프 </h5>
+						<h5 class="card-title"> ${ list[2].foodName } </h5>
 					</div>
 					<br><br><br>
 			</div>
