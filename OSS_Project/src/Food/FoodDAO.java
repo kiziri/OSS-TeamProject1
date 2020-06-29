@@ -5,10 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-import Food.Food;
-import FoodImages.FoodImages;
-import Taste.Taste;
-import Category.Category;
 import util.DBManager;
 
 public class FoodDAO {
@@ -18,17 +14,22 @@ public class FoodDAO {
 		Connection con =null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
-		String sql = "SELECT * FROM food WHERE FoodName = ?";
+		String sql = "SELECT FoodName, FoodCal, ImageID, TasteID, CategoryID FROM food WHERE FoodName = ?";
 				
 		ArrayList<Food> detaillist = new ArrayList<Food>();
 		
 		try {
 			con = DBManager.getConnection();
 			pstmt = con.prepareStatement(sql);
-			pstmt.setString(1, "%"+FoodName+"%");
+			pstmt.setString(1, FoodName);
 			rs = pstmt.executeQuery();
 			while (rs.next()) {
-				detaillist.add(new Food(rs.getInt(1), rs.getString(2), rs.getInt(3), rs.getInt(4), rs.getInt(5), rs.getInt(6)));
+				System.out.println(rs.getString(1).toString());
+				System.out.println(rs.getInt(2));
+				System.out.println(rs.getInt(3));
+				System.out.println(rs.getInt(4));
+				System.out.println(rs.getInt(5));
+				detaillist.add(new Food(rs.getString(1), rs.getInt(2), rs.getInt(3), rs.getInt(4), rs.getInt(5)));
 					System.out.println(detaillist.get(0).toString());
 			}
 		}
