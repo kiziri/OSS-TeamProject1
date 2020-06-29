@@ -107,36 +107,36 @@
 		<div class = "gridlayout" style ="display: grid; grid-template-columns: 330px 330px 340px;">
 				<div class = "main" style ="width: 33%; float: left;">
 					<div class="card" style="width: 18rem; height:275px;font-family: 'Jeju Hallasan', cursive; text-align:center; color:skyblue;
-			margin-left:15px;" onclick = "location.href = 'menu.jsp'">
+			margin-left:15px;" onclick = "location.href = '${ list[0].address }'">
 			
-				<img src="images/exam1.png" width="200px" height=200
+				<img src="/${ list[0].filePath }" width="200px" height=200
 				class="card-img-top" alt="as">
 					<div class="card-body">
-						<h5 class="card-title"> 고구마 수프 </h5>
+						<h5 class="card-title"> ${ list[0].foodName } </h5>
 					</div>
 					<br><br><br>
 			</div>
 				</div>
 			<aside class = "side" style ="width: 33%; float: right;">
 				<div class="card" style="width: 18rem; height:275px;font-family: 'Jeju Hallasan', cursive; text-align:center; color:skyblue;
-			margin-left:15px;" onclick = "location.href = 'menu.jsp'">
+			margin-left:15px;" onclick = "location.href = '${ list[1].address }'">
 			
-				<img src="images/exam1.png" width="200px" height=200
+				<img src="/${ list[1].filePath }" width="200px" height=200
 				class="card-img-top" alt="as">
 					<div class="card-body">
-						<h5 class="card-title"> 고구마 수프 </h5>
+						<h5 class="card-title"> ${ list[1].foodName } </h5>
 					</div>
 					<br><br><br>
 			</div>
 			</aside>
 			<aside class = "side" style ="width: 34%; float: right;">
 				<div class="card" style="width: 18rem; height:275px;font-family: 'Jeju Hallasan', cursive; text-align:center; color:skyblue;
-			margin-left:15px;" onclick = "location.href = 'menu.jsp'">
+			margin-left:15px;" onclick = "location.href = '${ list[2].address }'">
 			
-				<img src="images/exam1.png" width="200px" height=200
+				<img src="/${ list[2].filePath }" width="200px" height=200
 				class="card-img-top" alt="as">
 					<div class="card-body">
-						<h5 class="card-title"> 고구마 수프 </h5>
+						<h5 class="card-title"> ${ list[2].foodName } </h5>
 					</div>
 					<br><br><br>
 			</div>
