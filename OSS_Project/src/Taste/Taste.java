@@ -2,27 +2,30 @@ package Taste;
 
 public class Taste {
 	
-	private int TasteID; //맛 ID
-	private String TasteName; //맛 이름(단, 짠, 매운)
+	private int tasteId; //맛 ID
+	private String tasteName; //맛 이름(단, 짠, 매운)
 	
-	public Taste(int tasteID, String tasteName) {
+	
+	public Taste(int tasteId, String tasteName) {
 		super();
-		TasteID = tasteID;
-		TasteName = tasteName;
+		this.tasteId = tasteId;
+		this.tasteName = tasteName;
 	}
 	
-	public int getTasteID() {
-		return TasteID;
+	public int getTasteId() {
+		return tasteId;
 	}
-	public void setTasteID(int tasteID) {
-		TasteID = tasteID;
+	public void setTasteId(int tasteId) {
+		this.tasteId = tasteId;
 	}
 	public String getTasteName() {
-		return TasteName;
+		return tasteName;
 	}
 	public void setTasteName(String tasteName) {
-		TasteName = tasteName;
+		this.tasteName = tasteName;
 	}
+	
+	
 	
 	
 

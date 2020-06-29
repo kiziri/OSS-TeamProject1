@@ -2,43 +2,46 @@ package Recipe;
 
 public class Recipe {
 	
-	private int RecipeID; //레시피 ID
-	private int FoodID; //식품 ID(외래키)
-	private int Image_ID; //이미지 ID(외래키)
-	private String Address; //링크 주소
+	private int recipeId; //레시피 ID
+	private int foodId; //식품 ID(외래키)
+	private int image_Id; //이미지 ID(외래키)
+	private String address; //링크 주소
 	
 	
-	public Recipe(int recipeID, int foodID, int image_ID, String address) {
+	public Recipe(int recipeId, int foodId, int image_Id, String address) {
 		super();
-		RecipeID = recipeID;
-		FoodID = foodID;
-		Image_ID = image_ID;
-		Address = address;
+		this.recipeId = recipeId;
+		this.foodId = foodId;
+		this.image_Id = image_Id;
+		this.address = address;
 	}
 	
-	public int getRecipeID() {
-		return RecipeID;
+	public int getRecipeId() {
+		return recipeId;
 	}
-	public void setRecipeID(int recipeID) {
-		RecipeID = recipeID;
+	public void setRecipeId(int recipeId) {
+		this.recipeId = recipeId;
 	}
-	public int getFoodID() {
-		return FoodID;
+	public int getFoodId() {
+		return foodId;
 	}
-	public void setFoodID(int foodID) {
-		FoodID = foodID;
+	public void setFoodId(int foodId) {
+		this.foodId = foodId;
 	}
-	public int getImageID() {
-		return Image_ID;
+	public int getImage_Id() {
+		return image_Id;
 	}
-	public void setImageID(int imageID) {
-		Image_ID = imageID;
+	public void setImage_Id(int image_Id) {
+		this.image_Id = image_Id;
 	}
 	public String getAddress() {
-		return Address;
+		return address;
 	}
 	public void setAddress(String address) {
-		Address = address;
+		this.address = address;
 	}
+	
+	
+	
 	
 }

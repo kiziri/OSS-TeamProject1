@@ -2,26 +2,29 @@ package Ingredients;
 
 public class Ingredients {
 	
-	private int IngredientsID; //식재료 ID
-	private String IngredientsName; //식재료 이름
+	private int ingredientsId; //식재료 ID
+	private String ingredientsName; //식재료 이름
 	
-	public Ingredients(int ingredientsID, String ingredientsName) {
+	
+	public Ingredients(int ingredientsId, String ingredientsName) {
 		super();
-		IngredientsID = ingredientsID;
-		IngredientsName = ingredientsName;
+		this.ingredientsId = ingredientsId;
+		this.ingredientsName = ingredientsName;
 	}
 	
-	public int getIngredientsID() {
-		return IngredientsID;
+	public int getIngredientsId() {
+		return ingredientsId;
 	}
-	public void setIngredientsID(int ingredientsID) {
-		IngredientsID = ingredientsID;
+	public void setIngredientsId(int ingredientsId) {
+		this.ingredientsId = ingredientsId;
 	}
 	public String getIngredientsName() {
-		return IngredientsName;
+		return ingredientsName;
 	}
 	public void setIngredientsName(String ingredientsName) {
-		IngredientsName = ingredientsName;
+		this.ingredientsName = ingredientsName;
 	}
+	
+	
 	
 }
