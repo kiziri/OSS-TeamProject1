@@ -5,9 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-import Recipe.Recipe;
-import Food.Food;
-import FoodImages.FoodImages;
 import util.DBManager;
 
 public class RecipeDAO {
