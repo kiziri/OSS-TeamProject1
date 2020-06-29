@@ -9,20 +9,10 @@ public class Food {
 	private int TasteID; //맛 ID(외래키)
 	private int CategoryID; //대분류 ID(외래키)
 	
-	// 전체 조회
+	// 검색 데이터 호출
 	public Food(int foodID, String foodName, int foodCal, int imageID, int tasteID, int categoryID) {
 		super();
 		this.FoodID = foodID;
-		this.FoodName = foodName;
-		this.FoodCal = foodCal;
-		this.ImageID = imageID;
-		this.TasteID = tasteID;
-		this.CategoryID = categoryID;
-	}
-	
-	// 검색창 입력값  결과 조회
-	public Food(String foodName, int foodCal, int imageID, int tasteID, int categoryID) {
-		super();
 		this.FoodName = foodName;
 		this.FoodCal = foodCal;
 		this.ImageID = imageID;
@@ -66,8 +56,6 @@ public class Food {
 	public void setCategoryID(int categoryID) {
 		this.CategoryID = categoryID;
 	}
-
-
 
 
 }
