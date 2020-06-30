@@ -70,10 +70,7 @@
              <ul class="navbar-nav">
                <li class="nav-item active">
                  <a class="nav-link" href="MainPage.html">Home<span class="sr-only">(current)</span></a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="/search/">요리 검색</a>
-               </li>               
+               </li>           
                <li class="nav-item">
                  <a class="nav-link" href="menu.jsp">메뉴 추천</a>
                </li>
@@ -165,7 +162,7 @@
 	<!-- Footer -->
   	<footer class="py-5 bg-dark">
     	<div class="container">
-      		<p class="m-0 text-center text-white">Copyright &copy; Kiziri's Website 2020</p>
+      		<p class="m-0 text-center text-white">Copyright &copy; Today's Cook Website 2020</p>
     	</div>
    	<!-- /.container -->
   	</footer>
