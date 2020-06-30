@@ -17,10 +17,10 @@ Team Name : Today's Cook
   - Apache Tomcat 8.5 Tomcat
 
 2. **실행 순서**
-  1. Eclipse에 Project import
-  2. Apache server connect to Eclipse and project
-  3. Get start to run server
-  4. Start MainPage.html file in project 
+  - Eclipse에 Project import
+  - Apache server connect to Eclipse and project
+  - Get start to run server
+  - Start MainPage.html file in project 
 
 # 개발 내용
 
