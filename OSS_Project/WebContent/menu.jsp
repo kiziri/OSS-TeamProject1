@@ -131,7 +131,7 @@
 	
 	<div class="container">
 		<div class="jumbotron well" style = "background-color:rgb(245,245,245); color:black;">
-		<form action="/MenuResult.do" method="get">>
+		<form action="/MenuResult.do" method="get">
 			<fieldset>
 				<label class="Menu" style ="margin : 0 auto;"></label>
 				<!-- 개행 부분 -->
