@@ -1,11 +1,14 @@
 package Controller;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import Service.RecipeService;
 
 @WebServlet("/RecipeResult.do")
 public class RecipeResultServlet extends HttpServlet {
@@ -13,11 +16,16 @@ public class RecipeResultServlet extends HttpServlet {
        
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/html; charset=UTF-8");
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+		RecipeService rService = new RecipeService();
 		
 		try {
-			
+			request.setCharacterEncoding("utf-8");
+			String[] ingredients = request.getParameterValues("ingredient");
+			request.setAttribute("list", rService.recommend(ingredients[0], ingredients[1],
+									ingredients[2], ingredients[3], ingredients[4], ingredients[5], 
+									ingredients[6], ingredients[7]));
+			request.getRequestDispatcher("/RecipeResult.jsp").forward(request, response);
 		}
 		catch (Exception e) {
 			e.printStackTrace();
@@ -25,6 +33,5 @@ public class RecipeResultServlet extends HttpServlet {
 	        request.getRequestDispatcher("/error.jsp").forward(request, response);
 		}
 	}
-
 
 }
