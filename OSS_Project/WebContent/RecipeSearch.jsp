@@ -97,7 +97,7 @@
 	</h2>
 	<br>
 	<button data-toggle="collapse" data-target="#demo" style="background-color:skyblue;color:white;">Read Me</button>
-	<div id="demo" class="collapse">가지고 있는 재료를 선택한다.(다중 선택 허용) * 총 최대 필수 5개</div>
+	<div id="demo" class="collapse">가지고 있는 재료를 선택한다.(다중 선택 허용) * 총 최대 필수 8개</div>
 	<br>
 	<br>
 	<!-- /메인제목 파트 부분 -->
