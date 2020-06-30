@@ -111,10 +111,7 @@
              <ul class="navbar-nav">
                <li class="nav-item active">
                  <a class="nav-link" href="MainPage.html">Home<span class="sr-only">(current)</span></a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="/search/">요리 검색</a>
-               </li>               
+               </li>              
                <li class="nav-item">
                  <a class="nav-link" href="menu.jsp">메뉴 추천</a>
                </li>
