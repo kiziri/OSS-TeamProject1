@@ -2,46 +2,46 @@ package Recipe;
 
 public class Recipe {
 	
-	private int recipeId; //레시피 ID
-	private int foodId; //식품 ID(외래키)
-	private int image_Id; //이미지 ID(외래키)
+	private String foodName; //레시피 ID
+	private String filePath; //이미지 ID(외래키)
 	private String address; //링크 주소
 	
-	
-	public Recipe(int recipeId, int foodId, int image_Id, String address) {
+	// 초기화 생성자
+	public Recipe() {
+		
+	}
+
+	// 레시피 조건 검색 조회
+	public Recipe(String foodName, String filePath, String address) {
 		super();
-		this.recipeId = recipeId;
-		this.foodId = foodId;
-		this.image_Id = image_Id;
+		this.foodName = foodName;
+		this.filePath = filePath;
 		this.address = address;
 	}
 	
-	public int getRecipeId() {
-		return recipeId;
+	
+	public String getFoodName() {
+		return foodName;
 	}
-	public void setRecipeId(int recipeId) {
-		this.recipeId = recipeId;
+
+	public void setFoodName(String foodName) {
+		this.foodName = foodName;
 	}
-	public int getFoodId() {
-		return foodId;
+
+	public String getFilePath() {
+		return filePath;
 	}
-	public void setFoodId(int foodId) {
-		this.foodId = foodId;
+
+	public void setFilePath(String filePath) {
+		this.filePath = filePath;
 	}
-	public int getImage_Id() {
-		return image_Id;
-	}
-	public void setImage_Id(int image_Id) {
-		this.image_Id = image_Id;
-	}
+
 	public String getAddress() {
 		return address;
 	}
+
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	
-	
-	
 	
 }
